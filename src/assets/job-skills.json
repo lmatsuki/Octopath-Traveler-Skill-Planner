@@ -1,0 +1,106 @@
+{
+    "classes": [
+        {
+            "name": "Thief",
+            "description": "Some cheap thief",
+            "skills": [
+                {
+                    "id": 0,
+                    "name": "Armor Corrosive",
+                    "sp": 4,
+                    "description": "Reduces an enemies physical defense for two turns."
+                },
+                {
+                    "id": 1,
+                    "name": "HP Thief",
+                    "sp": 6,
+                    "description": "Attacks one enemy twice with a dagger. Attacker gains HP equal to half the damage dealt."
+                },
+                {
+                    "id": 2,
+                    "name": "Share SP",
+                    "sp": 0,
+                    "description": "Give 50% of your current SP to another party member."
+                },
+                {
+                    "id": 3,
+                    "name": "Steal",
+                    "sp": 2,
+                    "description": "Steal one item from one enemy."
+                },
+                {
+                    "id": 4,
+                    "name": "Steal SP",
+                    "sp": 6,
+                    "description": "Attack a single enemy twice with a dagger. Attacker gains SP equal to 5% of the damage dealt."
+                },
+                {
+                    "id": 5,
+                    "name": "Wildfire",
+                    "sp": 7,
+                    "description": "Deal massive fire-element damage to one enemy."
+                },
+                {
+                    "id": 6,
+                    "name": "Aeber’s Reckoning",
+                    "sp": 30,
+                    "description": "Attack all enemies with a dagger. Damage dealt is proportional to the user’s speed stat."
+                }
+            ]
+        },
+        {
+            "name": "Dancer",
+            "description": "A girl with a revenge",
+            "skills": [
+                {
+                    "id": 0,
+                    "name": "Bewildering Grace",
+                    "sp": 25,
+                    "description": "Causes a random effect to happen once."
+                },
+                {
+                    "id": 1,
+                    "name": "Lion Dance",
+                    "sp": 4,
+                    "description": "Raises a party member’s physical attack stat for two turns."
+                },
+                {
+                    "id": 2,
+                    "name": "Mole Dance",
+                    "sp": 4,
+                    "description": "Boost a party member’s physical defense for two turns."
+                },
+                {
+                    "id": 3,
+                    "name": "Moonlight Waltz",
+                    "sp": 7,
+                    "description": "Deals massive dark-elemental damage to one enemy."
+                },
+                {
+                    "id": 4,
+                    "name": "Night Ode",
+                    "sp": 10,
+                    "description": "Deals dark-elemental damage to all enemies."
+                },
+                {
+                    "id": 5,
+                    "name": "Panther Dance",
+                    "sp": 4,
+                    "description": "Boosts a party member’s speed for two turns."
+                },
+                {
+                    "id": 6,
+                    "name": "Peacock Strut",
+                    "sp": 4,
+                    "description": "Boost a party member’s elemental attacks for two turns."
+                },
+                {
+                    "id": 7,
+                    "name": "Sealticge’s Seduction",
+                    "sp": 30,
+                    "description": "Target party member’s skills that usually target one enemy will target all for three turns."
+                }
+            ]
+        }
+    ]
+}
