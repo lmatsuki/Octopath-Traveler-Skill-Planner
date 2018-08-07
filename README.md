@@ -1,4 +1,6 @@
-# vue-project
+# Octopath Traveler Skill Calculator
+
+Still in progress.
 
 ## Project setup
 ```
