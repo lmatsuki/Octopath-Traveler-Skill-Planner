@@ -26,7 +26,7 @@
       </b-dropdown-item>
     </b-dropdown>
     <span class="tile is-child notification">
-      <table class="table">
+      <table class="table is-fullwidth">
         <thead>
           <tr>
             <th>Skill</th>
@@ -36,11 +36,14 @@
         <tbody v-for="className in allJobNames" :key="className.name" v-if="className.name === jobName">
           <tr v-for="skill in filteredJobSkills" :key="skill.id">
             <td>
+              {{ skill.name }}
               <b-tooltip type="is-dark" :label="skill.description">
-                {{ skill.name }}
+                <b-icon pack="fas" icon="question-circle" size="is-small"></b-icon>
               </b-tooltip>
             </td>
-            <td>{{ skill.sp }}</td>
+            <td>
+              {{ skill.sp }}
+            </td>
           </tr>
         </tbody>
       </table>

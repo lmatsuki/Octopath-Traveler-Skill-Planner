@@ -3,7 +3,6 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 
 // Define components.
-import ComponentTest from '@/components/ComponentTest'
 import Home from '@/components/Home'
 import OctopathSkillCalc from '@/components/Octopath/OctopathSkillCalc'
 
@@ -13,7 +12,6 @@ Vue.config.productionTip = false
 // Define routes.
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/test', name: 'Test', component: ComponentTest },
   { path: '/octopathskillcalc', name: 'OctopathSkillCalc', component: OctopathSkillCalc }
 ]
 
