@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 // Define components.
 import Home from '@/components/Home'
 import OctopathSkillCalc from '@/components/OctopathSkillCalc'
-import Character from '@/components/Octopath/Characters'
+import Job from '@/components/Octopath/Job'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -14,8 +14,9 @@ Vue.config.productionTip = false
 const routes = [
   { path: '/', name: 'Home', component: Home },
   {
-    path: '/octopathskillcalc', name: 'OctopathSkillCalc', component: OctopathSkillCalc, children: [
-      { path: ':className', component: Character }
+    path: '/octopathskillcalc', name: 'OctopathSkillCalc', component: OctopathSkillCalc,
+    children: [
+      { path: ':characterName', component: Job }
     ]
   }
 ]

@@ -5,9 +5,6 @@
         </p>
         <ul class="menu-list">
             <li>
-                <a>{{ className }}</a>
-            </li>
-            <li>
                 <router-link to="/octopathskillcalc/therion" active-class="is-active">Therion</router-link>
             </li>
             <li>

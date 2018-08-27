@@ -50,16 +50,19 @@ import jobDetails from "@/assets/job-details.json";
 import jobSkills from "@/assets/job-skills.json";
 
 export default {
-  name: "Job",
-  props: {
-    jobNameParam: String
-  },
-  data: function() {
+  data() {
     return {
       jobSkills: jobSkills,
       jobDetails: jobDetails,
-      className: "Thief"
+      className: "Thief",
+      characterName: this.$route.params.characterName
     };
+  },
+  watch: {
+    $route(to) {
+      this.characterName = to.params.characterName;
+      this.className = this.convertCharNameToClassName(this.characterName);
+    }
   },
   computed: {
     allJobNames: function() {
@@ -74,6 +77,13 @@ export default {
   methods: {
     getJobName: function() {
       return this.jobName;
+    },
+    convertCharNameToClassName: function(charName) {
+      if (charName === "therion") {
+        return "Thief";
+      } else {
+        return "Dancer";
+      }
     }
   }
 };

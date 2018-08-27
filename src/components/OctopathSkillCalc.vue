@@ -13,11 +13,11 @@
           <div class="tile is-parent is-vertical">
             <div class="tile">
               <div class="column is-half">
-                {{ primaryClass }}
-                <job jobNameParam="Thief" />
+                <router-view></router-view>
+                <!-- <job jobNameParam="Thief" /> -->
               </div>
               <div class="column">
-                <job jobNameParam="Dancer" />
+                <!-- <job jobNameParam="Dancer" /> -->
               </div>
             </div>
             <div class="tile is-parent">
@@ -44,7 +44,7 @@ export default {
   name: "OctopathSkillCalc",
   data() {
     return {
-      primaryClass: "test"
+      primaryClass: "0"
     };
   },
   components: {
