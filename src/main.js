@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 // Define components.
 import Home from '@/components/Home'
 import OctopathSkillCalc from '@/components/OctopathSkillCalc'
+import Character from '@/components/Octopath/Characters'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -12,7 +13,11 @@ Vue.config.productionTip = false
 // Define routes.
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/octopathskillcalc', name: 'OctopathSkillCalc', component: OctopathSkillCalc }
+  {
+    path: '/octopathskillcalc', name: 'OctopathSkillCalc', component: OctopathSkillCalc, children: [
+      { path: ':className', component: Character }
+    ]
+  }
 ]
 
 // Create the router instance.

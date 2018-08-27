@@ -5,28 +5,31 @@
         </p>
         <ul class="menu-list">
             <li>
-                <a>Therion</a>
+                <a>{{ className }}</a>
             </li>
             <li>
-                <a>Primrose</a>
+                <router-link to="/octopathskillcalc/therion" active-class="is-active">Therion</router-link>
             </li>
             <li>
-                <a>H'aanit</a>
+                <router-link to="/octopathskillcalc/primrose" active-class="is-active">Primrose</router-link>
             </li>
             <li>
-                <a>Alfyn</a>
+                <router-link to="/octopathskillcalc/haanit" active-class="is-active">H'aanit</router-link>
             </li>
             <li>
-                <a>Ophilia</a>
+                <router-link to="/octopathskillcalc/alfyn" active-class="is-active">Alfyn</router-link>
             </li>
             <li>
-                <a>Tressa</a>
+                <router-link to="/octopathskillcalc/ophilia" active-class="is-active">Ophilia</router-link>
             </li>
             <li>
-                <a>Cyrus</a>
+                <router-link to="/octopathskillcalc/tressa" active-class="is-active">Tressa</router-link>
             </li>
             <li>
-                <a>Olberic</a>
+                <router-link to="/octopathskillcalc/cyrus" active-class="is-active">Cyrus</router-link>
+            </li>
+            <li>
+                <router-link to="/octopathskillcalc/olberic" active-class="is-active">Olberic</router-link>
             </li>
         </ul>
     </aside>
@@ -34,6 +37,11 @@
 
 <script>
 export default {
-  name: "Characters"
+  name: "Characters",
+  data() {
+    return {
+      className: this.$route.params.className
+    };
+  }
 };
 </script>

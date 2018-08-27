@@ -7,12 +7,13 @@
         <div class="tile is-ancestor">
           <div class="tile is-parent is-2">
             <article class="tile is-child">
-              <characters />
+              <characters :className="primaryClass" />
             </article>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile">
               <div class="column is-half">
+                {{ primaryClass }}
                 <job jobNameParam="Thief" />
               </div>
               <div class="column">
@@ -41,6 +42,11 @@ Vue.use(Buefy);
 
 export default {
   name: "OctopathSkillCalc",
+  data() {
+    return {
+      primaryClass: "test"
+    };
+  },
   components: {
     Characters,
     Job,
