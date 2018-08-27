@@ -41,36 +41,6 @@
           </b-table-column>
         </template>
       </b-table>
-      <!-- <table class="table is-fullwidth">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Skill</th>
-            <th></th>
-            <th>SP</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody v-for="className in allJobNames" :key="className.name" v-if="className.name === jobName">
-          <tr v-for="skill in filteredJobSkills" :key="skill.id">
-            <td>
-              <b-tooltip type="is-dark" :label="skill.description">
-                <b-icon pack="fas" icon="question-circle" size="is-small"></b-icon>
-              </b-tooltip>
-            </td>
-            <td>
-              {{ skill.name }}
-            </td>
-            <td></td>
-            <td>
-              {{ skill.sp }}
-            </td>
-            <td>
-              <input type="checkbox" />
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
     </span>
   </span>
 </template>

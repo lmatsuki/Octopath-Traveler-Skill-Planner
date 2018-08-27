@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 
 // Define components.
 import Home from '@/components/Home'
-import OctopathSkillCalc from '@/components/Octopath/OctopathSkillCalc'
+import OctopathSkillCalc from '@/components/OctopathSkillCalc'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
