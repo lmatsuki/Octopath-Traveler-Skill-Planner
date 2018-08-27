@@ -1,5 +1,6 @@
 [
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "Armor Corrosive",
         "sp": 4,
@@ -7,6 +8,7 @@
         "description": "Reduces an enemies physical defense for two turns."
     },
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "HP Thief",
         "sp": 6,
@@ -14,6 +16,7 @@
         "description": "Attacks one enemy twice with a dagger. Attacker gains HP equal to half the damage dealt."
     },
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "Share SP",
         "sp": 0,
@@ -21,6 +24,7 @@
         "description": "Give 50% of your current SP to another party member."
     },
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "Steal",
         "sp": 2,
@@ -28,6 +32,7 @@
         "description": "Steal one item from one enemy."
     },
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "Steal SP",
         "sp": 6,
@@ -35,6 +40,7 @@
         "description": "Attack a single enemy twice with a dagger. Attacker gains SP equal to 5% of the damage dealt."
     },
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "Wildfire",
         "sp": 7,
@@ -42,6 +48,7 @@
         "description": "Deal massive fire-element damage to one enemy."
     },
     {
+        "characterName": "Therion",
         "className": "Thief",
         "name": "Aeber’s Reckoning",
         "sp": 30,
@@ -49,6 +56,7 @@
         "description": "Attack all enemies with a dagger. Damage dealt is proportional to the user’s speed stat."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Bewildering Grace",
         "sp": 25,
@@ -56,6 +64,7 @@
         "description": "Causes a random effect to happen once."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Lion Dance",
         "sp": 4,
@@ -63,6 +72,7 @@
         "description": "Raises a party member’s physical attack stat for two turns."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Mole Dance",
         "sp": 4,
@@ -70,6 +80,7 @@
         "description": "Boost a party member’s physical defense for two turns."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Moonlight Waltz",
         "sp": 7,
@@ -77,6 +88,7 @@
         "description": "Deals massive dark-elemental damage to one enemy."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Night Ode",
         "sp": 10,
@@ -84,6 +96,7 @@
         "description": "Deals dark-elemental damage to all enemies."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Panther Dance",
         "sp": 4,
@@ -91,6 +104,7 @@
         "description": "Boosts a party member’s speed for two turns."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Peacock Strut",
         "sp": 4,
@@ -98,6 +112,7 @@
         "description": "Boost a party member’s elemental attacks for two turns."
     },
     {
+        "characterName": "Primrose",
         "className": "Dancer",
         "name": "Sealticge’s Seduction",
         "sp": 30,
