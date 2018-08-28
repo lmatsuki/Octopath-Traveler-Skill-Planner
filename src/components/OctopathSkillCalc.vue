@@ -13,11 +13,11 @@
           <div class="tile is-parent is-vertical">
             <div class="tile">
               <div class="column is-half">
+                {{ characterName | capitalize }}
                 <router-view></router-view>
-                <!-- <job jobNameParam="Thief" /> -->
               </div>
               <div class="column">
-                <!-- <job jobNameParam="Dancer" /> -->
+                <router-view></router-view>
               </div>
             </div>
             <div class="tile is-parent">
@@ -44,13 +44,19 @@ export default {
   name: "OctopathSkillCalc",
   data() {
     return {
-      primaryClass: "0"
+      primaryClass: "Thief",
+      characterName: this.$route.params.characterName
     };
   },
   components: {
     Characters,
     Job,
     PassiveSkills
+  },
+  filters: {
+    capitalize: function(value) {
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    }
   }
 };
 </script>
