@@ -66,7 +66,6 @@ export default {
   },
   computed: {
     allJobNames: function() {
-      var test = "";
       return jobSkills.classes;
     },
     filteredJobSkills: function() {
