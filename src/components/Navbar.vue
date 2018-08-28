@@ -17,7 +17,7 @@
           <router-link to="/">Home</router-link>
         </a>
         <a class="navbar-item">
-          <router-link to="/octopathskillcalc">Octopath Traveler Skill Calculator</router-link>
+          <router-link to="/octopathskillcalc/therion">Octopath Traveler Skill Calculator</router-link>
         </a>
         <div class="navbar-item has-dropdown is-hoverable is-dark">
           <a class="navbar-link" href="/documentation/overview/start/">
