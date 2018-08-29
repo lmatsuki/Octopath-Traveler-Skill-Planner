@@ -1,6 +1,6 @@
 <template>
   <span class="tile is-parent is-vertical">
-    <b-dropdown class="tile is-child" v-model="className" :disabled="isPrimary=='true'">
+    <b-dropdown class="tile is-child" v-model="className" :disabled="isPrimary">
       <button class="button is-primary is-fullwidth" type="button" slot="trigger">
         <template>
           <span v-for="detail in jobDetails" :key="detail.name" v-if="detail.className === className">

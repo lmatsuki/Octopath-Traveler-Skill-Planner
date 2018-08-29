@@ -14,10 +14,10 @@
             <div class="tile">
               <div class="column is-half">
                 {{ characterName | capitalize }}
-                <router-view is-primary="true"></router-view>
+                <router-view is-primary></router-view>
               </div>
               <div class="column">
-                <router-view is-primary="false"></router-view>
+                <router-view></router-view>
               </div>
             </div>
             <div class="tile is-parent">
