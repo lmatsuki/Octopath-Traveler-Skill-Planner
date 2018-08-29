@@ -37,7 +37,7 @@
             {{ props.row.sp }}
           </b-table-column>
           <b-table-column field="" label="">
-            <b-checkbox type="is-success"></b-checkbox>
+            <b-checkbox type="is-success" v-model="selectedSkills" :native-value="props.row.name"></b-checkbox>
           </b-table-column>
         </template>
       </b-table>
@@ -55,7 +55,8 @@ export default {
       jobSkills: jobSkills,
       jobDetails: jobDetails,
       className: "Thief",
-      characterName: this.$route.params.characterName
+      characterName: this.$route.params.characterName,
+      selectedSkills: []
     };
   },
   props: {
