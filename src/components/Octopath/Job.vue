@@ -66,6 +66,19 @@ export default {
     $route(to) {
       this.characterName = to.params.characterName;
       this.className = this.convertCharNameToClassName(this.characterName);
+    },
+    selectedSkills: {
+      handler() {
+        localStorage.setItem(
+          "selectedSkills",
+          JSON.stringify(this.selectedSkills)
+        );
+      }
+    }
+  },
+  mounted() {
+    if (localStorage.getItem("selectedSkills")) {
+      this.selectedSkills = JSON.parse(localStorage.getItem("selectedSkills"));
     }
   },
   computed: {
