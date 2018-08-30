@@ -61,6 +61,7 @@ export default {
   },
   props: {
     isPrimary: Boolean
+    //selectedSkills: Array
   },
   watch: {
     $route(to) {
@@ -70,15 +71,18 @@ export default {
     selectedSkills: {
       handler() {
         localStorage.setItem(
-          "selectedSkills",
+          this.getStorageName(),
           JSON.stringify(this.selectedSkills)
         );
       }
     }
   },
+  updated: function() {},
   mounted() {
-    if (localStorage.getItem("selectedSkills")) {
-      this.selectedSkills = JSON.parse(localStorage.getItem("selectedSkills"));
+    if (localStorage.getItem(this.getStorageName())) {
+      this.selectedSkills = JSON.parse(
+        localStorage.getItem(this.getStorageName())
+      );
     }
   },
   computed: {
@@ -101,6 +105,10 @@ export default {
       } else {
         return "Dancer";
       }
+    },
+    getStorageName: function() {
+      const primary = this.isPrimary ? "primarySkills" : "secondarySkills";
+      return `${this.className}-${primary}`;
     }
   }
 };

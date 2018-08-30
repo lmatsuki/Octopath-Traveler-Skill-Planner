@@ -14,10 +14,10 @@
             <div class="tile">
               <div class="column is-half">
                 {{ characterName | capitalize }}
-                <router-view is-primary></router-view>
+                <router-view is-primary :selectedSkills="selectedPrimarySkills"></router-view>
               </div>
               <div class="column">
-                <router-view></router-view>
+                <!-- <router-view :selectedSkills="selectedSecondarySkills"></router-view> -->
               </div>
             </div>
             <div class="tile is-parent">
@@ -45,7 +45,9 @@ export default {
   data() {
     return {
       primaryClass: "Thief",
-      characterName: this.$route.params.characterName
+      characterName: this.$route.params.characterName,
+      selectedPrimarySkills: [],
+      selectedSecondarySkills: []
     };
   },
   components: {
