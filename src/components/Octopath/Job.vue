@@ -77,8 +77,7 @@ export default {
       }
     }
   },
-  updated: function() {},
-  mounted() {
+  updated: function() {
     if (localStorage.getItem(this.getStorageName())) {
       this.selectedSkills = JSON.parse(
         localStorage.getItem(this.getStorageName())
