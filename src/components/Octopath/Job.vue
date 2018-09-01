@@ -56,7 +56,8 @@ export default {
       jobDetails: jobDetails,
       className: "Thief",
       characterName: this.$route.params.characterName,
-      selectedSkills: []
+      selectedSkills: [],
+      selectedClass: ""
     };
   },
   props: {
@@ -65,8 +66,10 @@ export default {
   },
   watch: {
     $route(to) {
-      this.characterName = to.params.characterName;
-      this.className = this.convertCharNameToClassName(this.characterName);
+      if (this.isPrimary) {
+        this.characterName = to.params.characterName;
+        this.className = this.convertCharNameToClassName(this.characterName);
+      }
     },
     selectedSkills: {
       handler() {
@@ -75,9 +78,18 @@ export default {
           JSON.stringify(this.selectedSkills)
         );
       }
+    },
+    className: {
+      handler() {
+        if (!this.isPrimary) {
+          console.log(`className: ${this.className}`);
+          console.log(`characterName: ${this.characterName}`);
+        }
+      }
     }
   },
   updated: function() {
+    //console.log(this.className);
     if (localStorage.getItem(this.getStorageName())) {
       this.selectedSkills = JSON.parse(
         localStorage.getItem(this.getStorageName())
@@ -106,8 +118,13 @@ export default {
       }
     },
     getStorageName: function() {
-      const primary = this.isPrimary ? "primarySkills" : "secondarySkills";
-      return `${this.className}-${primary}`;
+      if (this.isPrimary) {
+        return `${this.className.toLowerCase()}-activeSkills`;
+      } else {
+        return `${this.className.toLowerCase()}-${
+          this.selectedClass
+        }-activeSkills`;
+      }
     }
   }
 };

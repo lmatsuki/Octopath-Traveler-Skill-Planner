@@ -17,7 +17,7 @@
                 <router-view is-primary :selectedSkills="selectedPrimarySkills"></router-view>
               </div>
               <div class="column">
-                <!-- <router-view :selectedSkills="selectedSecondarySkills"></router-view> -->
+                <router-view :selectedSkills="selectedSecondarySkills"></router-view>
               </div>
             </div>
             <div class="tile is-parent">
