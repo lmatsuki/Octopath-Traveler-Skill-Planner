@@ -10,7 +10,7 @@
         <b-icon icon="menu-down"></b-icon>
       </button>
 
-      <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless">
+      <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless" v-if="!hasSameCharacterName(detail.name)">
         <div class="media">
           <b-icon class="media-left" icon="earth"></b-icon>
           <div class="media-content">
@@ -102,7 +102,20 @@ export default {
     },
     filteredJobSkills: function() {
       return jobSkills.filter(function(skill) {
-        return skill.className == this.className;
+        if (this.isPrimary) {
+          return skill.className === this.className;
+        } else {
+          return skill.className !== this.className;
+        }
+      }, this);
+    },
+    filteredJobDetails: function() {
+      return jobDetails.filter(function(detail) {
+        if (this.isPrimary) {
+          return detail.name.toLowerCase() === this.characterName;
+        } else {
+          return detail.name.toLowerCase() != this.characterName;
+        }
       }, this);
     }
   },
@@ -125,6 +138,9 @@ export default {
           this.selectedClass
         }-activeSkills`;
       }
+    },
+    hasSameCharacterName: function(name) {
+      return name.toLowerCase() === this.characterName.toLowerCase();
     }
   }
 };
