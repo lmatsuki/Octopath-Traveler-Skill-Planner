@@ -72,14 +72,20 @@ export default {
 
       console.log("Routing was updated.");
 
-      // Update the selected class
+      // Update selected class
       if (this.isPrimary === false && localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)) {
         // Set secondary job on load
         this.className = localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
       }
+
+      // Update selected skills
+      if (localStorage.getItem(this.getSkillStorageName())) {
+        this.selectedSkills = JSON.parse(localStorage.getItem(this.getSkillStorageName()));
+      }
     },
     selectedSkills: {
       handler() {
+        console.log('called selectedSkills handler');
         localStorage.setItem(this.getSkillStorageName(), JSON.stringify(this.selectedSkills));
       }
     },
@@ -88,9 +94,6 @@ export default {
     }
   },
   updated: function() {
-    if (localStorage.getItem(this.getSkillStorageName())) {
-      this.selectedSkills = JSON.parse(localStorage.getItem(this.getSkillStorageName()));
-    }
   },
   created: function() {
     console.log("created job component!");
@@ -107,7 +110,7 @@ export default {
     }
   },
   destroyed: function() {
-    console.log("destroyed job component!");
+    //console.log("destroyed job component!");
   },
   computed: {
     allJobNames: function() {
@@ -147,7 +150,7 @@ export default {
       if (this.isPrimary) {
         return `${this.characterName.toLowerCase()}-activeSkills`;
       } else {
-        return `${this.characterName.toLowerCase()}-${this.selectedClass}-activeSkills`;
+        return `${this.characterName.toLowerCase()}-${this.className}-activeSkills`;
       }
     },
     hasSameCharacterName: function(name) {
@@ -156,7 +159,7 @@ export default {
       return name.toLowerCase() === this.characterName.toLowerCase();
     },
     doStuff: function() {
-      console.log(this.className);
+      //console.log(this.className);
     },
     isEqualIgnoreCaseAndApostrophe(firstClass, secondClass) {
       return (firstClass.replace("'", "").toLowerCase() === secondClass.replace("'", "").toLowerCase());
