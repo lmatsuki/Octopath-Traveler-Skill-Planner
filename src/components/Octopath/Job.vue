@@ -14,8 +14,7 @@
         <div class="media">
           <b-icon class="media-left" icon="earth"></b-icon>
           <div class="media-content">
-            <h3>{{ detail.name }}</h3>
-            <small>{{ detail.description }}</small>
+            <h3>{{ detail.className }}</h3>
           </div>
         </div>
       </b-dropdown-item>

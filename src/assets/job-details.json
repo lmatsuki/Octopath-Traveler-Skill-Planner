@@ -2,16 +2,25 @@
     {
         "name": "Therion",
         "className": "Thief",
-        "description": "Out on an errand to remove the bracelet of shame."
+        "pathAction": "Steal - allows Therion to steal the belongings of townspeople.",
+        "talent": "Pick Lock - allows Therion to open locked treasure chests he encounters in his travels."
     },
     {
         "name": "Primrose",
         "className": "Dancer",
-        "description": "On a quest for revenge."
+        "pathAction": "Allure - allows Primrose to allure townspeople into following her.",
+        "talent": "Summon - allows Primrose to summon a townsperson she has charmed to aid in battle."
     },
     {
         "name": "H'aanit",
         "className": "Hunter",
-        "description": "Out to save her master."
+        "pathAction": "Provoke - allows H'aanit to use beasts to provoke people into battle.",
+        "talent": "Capture - allows H'aanit to capture monsters and beasts in battle and train them to fight by her side."
+    },
+    {
+        "name": "Olberic Eisenberg",
+        "className": "Warrior",
+        "pathAction": "Challenge - allows Olberic to challenge townspeople to a duel.",
+        "talent": "Bolster Defense - allows Olberic to boost while defending to protect against the mighty blows of formidable enemies."
     }
 ]
