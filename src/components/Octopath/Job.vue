@@ -10,8 +10,7 @@
         <b-icon icon="menu-down"></b-icon>
       </button>
 
-      <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless" v-on:click="setActiveClass">
-        <!-- <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless"> -->
+      <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless" v-on:click="setActiveClass" v-if="getAllClassesExceptThis(detail.className)">
         <div class="media">
           <b-icon class="media-left" icon="earth"></b-icon>
           <div class="media-content">
@@ -43,7 +42,6 @@
         </template>
       </b-table>
     </span>
-    <button class="button is-info" v-on:click="doStuff">do stuff</button>
   </span>
 </template>
 
@@ -85,7 +83,6 @@ export default {
     },
     selectedSkills: {
       handler() {
-        console.log('called selectedSkills handler');
         localStorage.setItem(this.getSkillStorageName(), JSON.stringify(this.selectedSkills));
       }
     },
@@ -158,14 +155,15 @@ export default {
       //console.log("second: " + this.characterName.toLowerCase());
       return name.toLowerCase() === this.characterName.toLowerCase();
     },
-    doStuff: function() {
-      //console.log(this.className);
+    getAllClassesExceptThis: function(className) {
+      // name == "Hunter, Thief, Dancer"
+      return this.convertCharNameToClassName(this.characterName) !== className;
+
     },
     isEqualIgnoreCaseAndApostrophe(firstClass, secondClass) {
       return (firstClass.replace("'", "").toLowerCase() === secondClass.replace("'", "").toLowerCase());
     },
     setActiveClass() {
-      console.log("--------------setactiveclass");
       localStorage.setItem(`${this.characterName.toLowerCase()}-activeClass`, this.className);
     },
     getActiveClassCached() {
