@@ -22,5 +22,29 @@
         "className": "Warrior",
         "pathAction": "Challenge - allows Olberic to challenge townspeople to a duel.",
         "talent": "Bolster Defense - allows Olberic to boost while defending to protect against the mighty blows of formidable enemies."
+    },
+    {
+        "name": "Cyrus Albright",
+        "className": "Scholar",
+        "pathAction": "Scrutinize - allows Cyrus to glean new knowledge from the townspeople.",
+        "talent": "Study Foe - allows Cyrus to gain insight into an unfamiliar foe's weaknesses."
+    },
+    {
+        "name": "Tressa Colozone",
+        "className": "Merchant",
+        "pathAction": "Purchase - allows Tressa to purchase items from townspeople.",
+        "talent": "Eye for Money - allows Tressa to collect money left behind by fallen adventurers, merchants, and the like."
+    },
+    {
+        "name": "Ophilia Clement",
+        "className": "Cleric",
+        "pathAction": "Guide - allows Ophilia to guide townspeople, who will follow wherever she goes.",
+        "talent": "Summon - allows Ophilia to summon a townsperson under her guidance to aid in battle."
+    },
+    {
+        "name": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "pathAction": "Inquire - allows Alfyn to learn all sorts of information from people.",
+        "talent": "Concoct - allows Alfyn to create potions and substances from various ingredients to aid allies or harm foes in battle."
     }
 ]
