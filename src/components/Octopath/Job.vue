@@ -21,10 +21,10 @@
       </b-dropdown-item>
     </b-dropdown>
     <span class="tile is-child notification">
-      <b-table :data="filteredJobSkills" :hoverable="true" class="table is-fullwidth">
+      <b-table :data="filteredJobSkills" :hoverable="true" class="table is-fullwidth visible-tooltip">
         <template slot-scope="props">
           <b-table-column field="name" label="Skill">
-            <b-tooltip type="is-dark" :label="props.row.description">
+            <b-tooltip type="is-dark is-fixed" :label="props.row.description">
               {{ props.row.name }}
             </b-tooltip>
           </b-table-column>
@@ -44,6 +44,12 @@
     </span>
   </span>
 </template>
+
+<style>
+  .visible-tooltip .table-wrapper {
+    overflow: visible;
+  }
+</style>
 
 <script>
 import jobDetails from "@/assets/job-details.json";
