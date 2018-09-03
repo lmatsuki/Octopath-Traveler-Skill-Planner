@@ -64,7 +64,6 @@ export default {
   },
   props: {
     isPrimary: Boolean
-    //selectedSkills: Array
   },
   watch: {
     $route(to) {
@@ -74,22 +73,14 @@ export default {
       console.log("Routing was updated.");
 
       // Update the selected class
-      if (
-        this.isPrimary === false &&
-        localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)
-      ) {
+      if (this.isPrimary === false && localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)) {
         // Set secondary job on load
-        this.className = localStorage.getItem(
-          `${this.characterName.toLowerCase()}-activeClass`
-        );
+        this.className = localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
       }
     },
     selectedSkills: {
       handler() {
-        localStorage.setItem(
-          this.getStorageName(),
-          JSON.stringify(this.selectedSkills)
-        );
+        localStorage.setItem(this.getStorageName(), JSON.stringify(this.selectedSkills));
       }
     },
     className: {
@@ -98,9 +89,7 @@ export default {
   },
   updated: function() {
     if (localStorage.getItem(this.getStorageName())) {
-      this.selectedSkills = JSON.parse(
-        localStorage.getItem(this.getStorageName())
-      );
+      this.selectedSkills = JSON.parse(localStorage.getItem(this.getStorageName()));
     }
   },
   created: function() {
@@ -108,24 +97,14 @@ export default {
   },
   mounted: function() {
     console.log("mounted job component!");
-    const className = this.convertCharNameToClassName(
-      this.$route.params.characterName
-    );
 
     if (this.isPrimary === true) {
       // Set the primary job on load
-      this.className = this.convertCharNameToClassName(
-        this.$route.params.characterName
-      );
-    } else if (
-      localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)
-    ) {
+      this.className = this.convertCharNameToClassName(this.$route.params.characterName);
+    } else if (this.getActiveClassCached()) {
       // Set secondary job on load
-      this.className = localStorage.getItem(
-        `${this.characterName.toLowerCase()}-activeClass`
-      );
+      this.className = this.getActiveClassCached();
     }
-    console.log(`secondary: ${className.toLowerCase()}-activeClass`);
   },
   destroyed: function() {
     console.log("destroyed job component!");
@@ -136,10 +115,7 @@ export default {
     },
     filteredJobSkills: function() {
       return jobSkills.filter(function(skill) {
-        return this.isEqualIgnoreCaseAndApostrophe(
-          skill.className,
-          this.className
-        );
+        return this.isEqualIgnoreCaseAndApostrophe(skill.className, this.className);
       }, this);
     },
     filteredJobDetails: function() {
@@ -171,9 +147,7 @@ export default {
       if (this.isPrimary) {
         return `${this.className.toLowerCase()}-activeSkills`;
       } else {
-        return `${this.className.toLowerCase()}-${
-          this.selectedClass
-        }-activeSkills`;
+        return `${this.className.toLowerCase()}-${this.selectedClass}-activeSkills`;
       }
     },
     hasSameCharacterName: function(name) {
@@ -185,17 +159,14 @@ export default {
       console.log(this.className);
     },
     isEqualIgnoreCaseAndApostrophe(firstClass, secondClass) {
-      return (
-        firstClass.replace("'", "").toLowerCase() ===
-        secondClass.replace("'", "").toLowerCase()
-      );
+      return (firstClass.replace("'", "").toLowerCase() === secondClass.replace("'", "").toLowerCase());
     },
     setActiveClass() {
       console.log("--------------setactiveclass");
-      localStorage.setItem(
-        `${this.characterName.toLowerCase()}-activeClass`,
-        this.className
-      );
+      localStorage.setItem(`${this.characterName.toLowerCase()}-activeClass`, this.className);
+    },
+    getActiveClassCached() {
+      return localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
     }
   }
 };
