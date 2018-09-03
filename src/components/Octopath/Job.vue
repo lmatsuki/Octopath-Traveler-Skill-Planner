@@ -80,7 +80,7 @@ export default {
     },
     selectedSkills: {
       handler() {
-        localStorage.setItem(this.getStorageName(), JSON.stringify(this.selectedSkills));
+        localStorage.setItem(this.getSkillStorageName(), JSON.stringify(this.selectedSkills));
       }
     },
     className: {
@@ -88,8 +88,8 @@ export default {
     }
   },
   updated: function() {
-    if (localStorage.getItem(this.getStorageName())) {
-      this.selectedSkills = JSON.parse(localStorage.getItem(this.getStorageName()));
+    if (localStorage.getItem(this.getSkillStorageName())) {
+      this.selectedSkills = JSON.parse(localStorage.getItem(this.getSkillStorageName()));
     }
   },
   created: function() {
@@ -143,11 +143,11 @@ export default {
         return "";
       }
     },
-    getStorageName: function() {
+    getSkillStorageName: function() {
       if (this.isPrimary) {
-        return `${this.className.toLowerCase()}-activeSkills`;
+        return `${this.characterName.toLowerCase()}-activeSkills`;
       } else {
-        return `${this.className.toLowerCase()}-${this.selectedClass}-activeSkills`;
+        return `${this.characterName.toLowerCase()}-${this.selectedClass}-activeSkills`;
       }
     },
     hasSameCharacterName: function(name) {
