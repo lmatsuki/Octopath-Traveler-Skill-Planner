@@ -10,7 +10,8 @@
         <b-icon icon="menu-down"></b-icon>
       </button>
 
-      <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless" v-if="!hasSameCharacterName(detail.name)">
+      <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless" v-on:click="setActiveClass">
+        <!-- <b-dropdown-item v-for="detail in jobDetails" :key="detail.name" :value="detail.className" class="custom paddingless"> -->
         <div class="media">
           <b-icon class="media-left" icon="earth"></b-icon>
           <div class="media-content">
@@ -37,11 +38,12 @@
             {{ props.row.sp }}
           </b-table-column>
           <b-table-column field="" label="">
-            <b-checkbox type="is-success" v-model="selectedSkills" :native-value="props.row.name"></b-checkbox>
+            <b-checkbox type="is-success" v-model="selectedSkills" :native-value=" props.row.name "></b-checkbox>
           </b-table-column>
         </template>
       </b-table>
     </span>
+    <button class="button is-info" v-on:click="doStuff">do stuff</button>
   </span>
 </template>
 
@@ -54,7 +56,7 @@ export default {
     return {
       jobSkills: jobSkills,
       jobDetails: jobDetails,
-      className: "Thief",
+      className: "",
       characterName: this.$route.params.characterName,
       selectedSkills: [],
       selectedClass: ""
@@ -66,9 +68,20 @@ export default {
   },
   watch: {
     $route(to) {
-      if (this.isPrimary) {
-        this.characterName = to.params.characterName;
-        this.className = this.convertCharNameToClassName(this.characterName);
+      this.characterName = to.params.characterName;
+      this.className = this.convertCharNameToClassName(this.characterName);
+
+      console.log("Routing was updated.");
+
+      // Update the selected class
+      if (
+        this.isPrimary === false &&
+        localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)
+      ) {
+        // Set secondary job on load
+        this.className = localStorage.getItem(
+          `${this.characterName.toLowerCase()}-activeClass`
+        );
       }
     },
     selectedSkills: {
@@ -80,21 +93,42 @@ export default {
       }
     },
     className: {
-      handler() {
-        if (!this.isPrimary) {
-          console.log(`className: ${this.className}`);
-          console.log(`characterName: ${this.characterName}`);
-        }
-      }
+      handler() {}
     }
   },
   updated: function() {
-    //console.log(this.className);
     if (localStorage.getItem(this.getStorageName())) {
       this.selectedSkills = JSON.parse(
         localStorage.getItem(this.getStorageName())
       );
     }
+  },
+  created: function() {
+    console.log("created job component!");
+  },
+  mounted: function() {
+    console.log("mounted job component!");
+    const className = this.convertCharNameToClassName(
+      this.$route.params.characterName
+    );
+
+    if (this.isPrimary === true) {
+      // Set the primary job on load
+      this.className = this.convertCharNameToClassName(
+        this.$route.params.characterName
+      );
+    } else if (
+      localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)
+    ) {
+      // Set secondary job on load
+      this.className = localStorage.getItem(
+        `${this.characterName.toLowerCase()}-activeClass`
+      );
+    }
+    console.log(`secondary: ${className.toLowerCase()}-activeClass`);
+  },
+  destroyed: function() {
+    console.log("destroyed job component!");
   },
   computed: {
     allJobNames: function() {
@@ -102,11 +136,10 @@ export default {
     },
     filteredJobSkills: function() {
       return jobSkills.filter(function(skill) {
-        if (this.isPrimary) {
-          return skill.className === this.className;
-        } else {
-          return skill.className !== this.className;
-        }
+        return this.isEqualIgnoreCaseAndApostrophe(
+          skill.className,
+          this.className
+        );
       }, this);
     },
     filteredJobDetails: function() {
@@ -124,10 +157,14 @@ export default {
       return this.jobName;
     },
     convertCharNameToClassName: function(charName) {
-      if (charName === "therion") {
+      if (charName.toLowerCase() === "therion") {
         return "Thief";
-      } else {
+      } else if (charName.toLowerCase() === "primrose") {
         return "Dancer";
+      } else if (charName.toLowerCase() === "haanit") {
+        return "Hunter";
+      } else {
+        return "";
       }
     },
     getStorageName: function() {
@@ -140,7 +177,25 @@ export default {
       }
     },
     hasSameCharacterName: function(name) {
+      //console.log("first: " + name.toLowerCase());
+      //console.log("second: " + this.characterName.toLowerCase());
       return name.toLowerCase() === this.characterName.toLowerCase();
+    },
+    doStuff: function() {
+      console.log(this.className);
+    },
+    isEqualIgnoreCaseAndApostrophe(firstClass, secondClass) {
+      return (
+        firstClass.replace("'", "").toLowerCase() ===
+        secondClass.replace("'", "").toLowerCase()
+      );
+    },
+    setActiveClass() {
+      console.log("--------------setactiveclass");
+      localStorage.setItem(
+        `${this.characterName.toLowerCase()}-activeClass`,
+        this.className
+      );
     }
   }
 };
