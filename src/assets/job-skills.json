@@ -118,5 +118,13 @@
         "sp": 30,
         "element": "",
         "description": "Target party member’s skills that usually target one enemy will target all for three turns."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Summon",
+        "sp": 100,
+        "element": "",
+        "description": "Placeholder test Hunter skill."
     }
 ]

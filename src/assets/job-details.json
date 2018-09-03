@@ -8,5 +8,10 @@
         "name": "Primrose",
         "className": "Dancer",
         "description": "On a quest for revenge."
+    },
+    {
+        "name": "H'aanit",
+        "className": "Hunter",
+        "description": "Out to save her master."
     }
 ]
