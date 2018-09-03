@@ -21,7 +21,7 @@
               </div>
             </div>
             <div class="tile is-parent">
-              <passive-skills />
+              <support-skills />
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ import Vue from "vue";
 import Buefy from "buefy";
 import Characters from "@/components/Octopath/Characters";
 import Job from "@/components/Octopath/Job";
-import PassiveSkills from "@/components/Octopath/PassiveSkills";
+import SupportSkills from "@/components/Octopath/SupportSkills";
 
 import "buefy/lib/buefy.css";
 Vue.use(Buefy);
@@ -53,7 +53,7 @@ export default {
   components: {
     Characters,
     Job,
-    PassiveSkills
+    SupportSkills
   },
   filters: {
     capitalize: function(value) {
