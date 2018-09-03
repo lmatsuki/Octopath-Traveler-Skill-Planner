@@ -42,6 +42,7 @@
         </template>
       </b-table>
     </span>
+     <a class="button is-info" v-on:click="doSomething">Press me</a>
   </span>
 </template>
 
@@ -63,7 +64,6 @@ export default {
       className: "",
       characterName: this.$route.params.characterName,
       selectedSkills: [],
-      selectedClass: ""
     };
   },
   props: {
@@ -92,14 +92,6 @@ export default {
         localStorage.setItem(this.getSkillStorageName(), JSON.stringify(this.selectedSkills));
       }
     },
-    className: {
-      handler() {}
-    }
-  },
-  updated: function() {
-  },
-  created: function() {
-    console.log("created job component!");
   },
   mounted: function() {
     console.log("mounted job component!");
@@ -139,15 +131,24 @@ export default {
       return this.jobName;
     },
     convertCharNameToClassName: function(charName) {
-      if (charName.toLowerCase() === "therion") {
-        return "Thief";
-      } else if (charName.toLowerCase() === "primrose") {
-        return "Dancer";
-      } else if (charName.toLowerCase() === "haanit") {
-        return "Hunter";
-      } else {
+      if (!charName || charName === '') {
         return "";
+      } else {
+        const jobDetail = this.jobDetails.filter(function (detail){
+          return this.isEqualIgnoreCaseAndApostrophe(detail.name, charName);
+        }, this);
+
+        if (jobDetail && jobDetail.length > 0) {
+          return jobDetail[0].className;
+        } else {
+          return "";
+        }
       }
+    },
+    doSomething : function () {
+      console.log(this.jobDetails.filter(function (detail){
+        return detail.name === "Therion";
+      }, this).length);
     },
     getSkillStorageName: function() {
       if (this.isPrimary) {
@@ -155,11 +156,6 @@ export default {
       } else {
         return `${this.characterName.toLowerCase()}-${this.className}-activeSkills`;
       }
-    },
-    hasSameCharacterName: function(name) {
-      //console.log("first: " + name.toLowerCase());
-      //console.log("second: " + this.characterName.toLowerCase());
-      return name.toLowerCase() === this.characterName.toLowerCase();
     },
     getAllClassesExceptThis: function(className) {
       // name == "Hunter, Thief, Dancer"
