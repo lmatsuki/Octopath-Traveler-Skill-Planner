@@ -119,12 +119,380 @@
         "element": "",
         "description": "Target party member’s skills that usually target one enemy will target all for three turns."
     },
+    {        
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Rain of Arrows",
+        "sp": "8",
+        "element": "",
+        "description": "Attack random foes 5 to 8 times with a bow."
+    },
     {
         "characterName": "H'aanit",
         "className": "Hunter",
-        "name": "Summon",
-        "sp": 100,
+        "name": "True Strike",
+        "sp": "10",
         "element": "",
-        "description": "Placeholder test Hunter skill."
+        "description": "Deal critical damage with a bow to a single foe."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Thunderbird",
+        "sp": "7",
+        "element": "",
+        "description": "Deal heavy lightning damage to a single foe."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Leghold Trap",
+        "sp": "6",
+        "element": "",
+        "description": "Cause a single foe to act at the end of the turn for 2 turns."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Mercy Strike",
+        "sp": "4",
+        "element": "",
+        "description": "Attack a single foe with a bow. Otherwise lethal attacks will instead leave the target with 1 HP."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Arrowstorm",
+        "sp": "24",
+        "element": "",
+        "description": "Attack all foes 5 to 8 times with a bow."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Take Aim",
+        "sp": "8",
+        "element": "",
+        "description": "Increase all allies' critical rate and accuracy for 2 turns."
+    },
+    {
+        "characterName": "H'aanit",
+        "className": "Hunter",
+        "name": "Draefendi's Rage",
+        "sp": "30",
+        "element": "Divine",
+        "description": "Unleash a highly powerful bow attack on all foes."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Abide",
+        "sp": "4",
+        "element": "",
+        "description": "Increase physical attack strength for three turns."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Cross Strike",
+        "sp": "12",
+        "element": "",
+        "description": "Attack a single enemy with your sword."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Incite",
+        "sp": "4",
+        "element": "",
+        "description": "Draw enemy attacks for three turns."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Level Slash",
+        "sp": "9",
+        "element": "",
+        "description": "Attack all enemies with your sword."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Spearhead",
+        "sp": "6",
+        "element": "",
+        "description": "Attack one enemy with a polearm and get to move earlier on the next turn."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Stout Wall",
+        "sp": "4",
+        "element": "",
+        "description": "Increase physical defense for three turns."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Thousand Spears",
+        "sp": "20",
+        "element": "",
+        "description": "Attack random enemies 5-10 times with a polearm."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
+        "name": "Brand’s Thunder",
+        "sp": "30",
+        "element": "Divine",
+        "description": "potent sword attack on one enemy."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Fireball",
+        "sp": "8",
+        "element": "",
+        "description": "Deals fire damage to all enemies."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Fire Storm",
+        "sp": "22",
+        "element": "",
+        "description": "Deals fire damage to all enemies twice."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Icewind",
+        "sp": "8",
+        "element": "",
+        "description": "Deals ice damage to all enemies."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Blizzard",
+        "sp": "22",
+        "element": "",
+        "description": "Deals ice damage to all enemies twice."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Lightning Bolt",
+        "sp": "8",
+        "element": "",
+        "description": "Deals lightning damage to all enemies."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Lightning Blast",
+        "sp": "22",
+        "element": "",
+        "description": "Does lightning damage to all enemies twice."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Analyze",
+        "sp": "1",
+        "element": "",
+        "description": "Reveals the HP and one weakness of a single enemy."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Alephan’s Enlightenment",
+        "sp": "30",
+        "element": "Divine",
+        "description": "Target party member’s spells that typically target all enemies will instead only target one, but with increased intensity."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Collect",
+        "sp": "2",
+        "element": "",
+        "description": "Have an enemy pay for the privilege of fighting you."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Donate BP",
+        "sp": "3",
+        "element": "",
+        "description": "Donates one BP to the targeted ally."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Hired Help",
+        "sp": "0",
+        "element": "",
+        "description": "Pay to summon hired help to fight on your side."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Rest",
+        "sp": "0",
+        "element": "",
+        "description": "Skip your turn to restore your HP, SP, and status ailments."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Sidestep",
+        "sp": "10",
+        "element": "",
+        "description": "Dodge the next physical attack with 100% success."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Trade Tempest",
+        "sp": "10",
+        "element": "",
+        "description": "Deals wind-elemental damage to all enemies."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Tradewinds",
+        "sp": "7 SP",
+        "element": "",
+        "description": "Deals massive wind-elemental damage to one enemy."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Bifelgan’s Bounty",
+        "sp": "30",
+        "element": "",
+        "description": "Hits an enemy with one non-elemental attack and gives you cash equal to the damage you dealt."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Heal More",
+        "sp": "25",
+        "element": "",
+        "description": "Restores a significant amount of health to the entire party."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Heal Wounds",
+        "sp": "8",
+        "element": "",
+        "description": "Restores a bit of health to the whole party."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Holy Light",
+        "sp": "6",
+        "element": "",
+        "description": "Attack one enemy with light-elemental damage."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Luminescence",
+        "sp": "9",
+        "element": "",
+        "description": "Attack all enemies with light-elemental damage."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Reflective Veil",
+        "sp": "22",
+        "element": "",
+        "description": "Imbues one party member with the ability to reflect a single elemental attack."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Revive",
+        "sp": "50",
+        "element": "",
+        "description": "Revives all downed party members."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Sheltering Veil",
+        "sp": "6",
+        "element": "",
+        "description": "Raises a party member’s elemental defense for two turns."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Aelfric’s Auspices",
+        "sp": "30",
+        "element": "",
+        "description": "Allow a single party member to trigger twice per turn for three turns."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Amputation",
+        "sp": "8",
+        "element": "",
+        "description": "A powerful axe attack on a single enemy."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Empoison",
+        "sp": "6",
+        "element": "",
+        "description": "Poisons an enemy for two turns."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "First Aid",
+        "sp": "4",
+        "element": "",
+        "description": "Restore health for a single party member."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Icicle",
+        "sp": "7",
+        "element": "",
+        "description": "Deals ice damage to one enemy."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Last Stand",
+        "sp": "16",
+        "element": "",
+        "description": "Attacks all enemies with aze. Deals an amount of damage inversely proportional to the users current HP."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Vivify",
+        "sp": "16",
+        "element": "",
+        "description": "Revive a single party member."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Dohter’s Charity",
+        "sp": "30 SP",
+        "element": "",
+        "description": "Items used by the target will affect the entire party for three turns."
     }
 ]

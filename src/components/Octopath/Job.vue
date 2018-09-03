@@ -129,7 +129,7 @@ export default {
     getJobName: function() {
       return this.jobName;
     },
-    convertCharNameToClassName: function(charName) {
+    convertCharNameToClassName: function(charName) {      
       if (!charName || charName === '') {
         return "";
       } else {
@@ -162,7 +162,7 @@ export default {
 
     },
     isEqualIgnoreCaseAndApostrophe(firstClass, secondClass) {
-      return (firstClass.replace("'", "").toLowerCase() === secondClass.replace("'", "").toLowerCase());
+      return (firstClass.replace("'", "").split(' ')[0].toLowerCase() === secondClass.replace("'", "").split(' ')[0].toLowerCase());
     },
     setActiveClass() {
       localStorage.setItem(`${this.characterName.toLowerCase()}-activeClass`, this.className);
