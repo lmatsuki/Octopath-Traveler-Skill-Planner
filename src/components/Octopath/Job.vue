@@ -52,8 +52,8 @@
 </style>
 
 <script>
-import jobDetails from "@/assets/job-details.json";
-import jobSkills from "@/assets/job-skills.json";
+import jobDetails from "@/assets/Octopath/job-details.json";
+import jobSkills from "@/assets/Octopath/job-skills.json";
 
 export default {
   data() {

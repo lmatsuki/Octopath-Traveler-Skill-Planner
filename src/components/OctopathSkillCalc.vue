@@ -2,8 +2,10 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title">Octopath Traveler Skill Calculator</h2>
-        <p class="subtitle">Plan your character jobs and skills!</p>
+        <div class="title-container">
+          <h2 class="title">Octopath Traveler Skill Calculator</h2>
+          <p class="subtitle">Plan your character jobs and skills!</p>
+        </div>        
         <div class="tile is-ancestor">
           <div class="tile is-parent is-2">
             <article class="tile is-child">
@@ -27,8 +29,36 @@
         </div>
       </div>
     </div>
+    <div class="bg-image"></div>
   </section>
 </template>
+
+<style>
+  .bg-image {
+    background-image: url(/img/worldmap.d72f062c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(2px);
+  }
+
+  .title-container {
+    background: linear-gradient(to right, #0000009e -1%, #2d1e0e, #0000002b 39%, transparent 45%);
+    padding: 10px;
+  }
+
+  .title, .subtitle {
+    color: white;
+  }
+
+  #app, html, body {
+    height: 100%;
+  }
+</style>
 
 <script>
 import Vue from "vue";
