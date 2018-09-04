@@ -81,10 +81,7 @@ export default {
         this.className = localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
       }
 
-      // Update selected skills
-      if (localStorage.getItem(this.getSkillStorageName())) {
-        this.selectedSkills = JSON.parse(localStorage.getItem(this.getSkillStorageName()));
-      }
+      this.updateSelectedSkills();
     },
     selectedSkills: {
       handler() {
@@ -111,6 +108,8 @@ export default {
       // Set secondary job on load
       this.className = this.getActiveClassCached();
     }
+
+    this.updateSelectedSkills();
   },
   computed: {
     allJobNames: function() {
@@ -182,6 +181,11 @@ export default {
       return (this.filteredJobSkills.filter(function (skill) {
             return skill.element === "Divine";
           }, this))[0].name;
+    },
+    updateSelectedSkills() {
+      if (localStorage.getItem(this.getSkillStorageName())) {
+        this.selectedSkills = JSON.parse(localStorage.getItem(this.getSkillStorageName()));
+      }
     }
   }
 };
