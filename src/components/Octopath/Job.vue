@@ -36,7 +36,7 @@
             {{ props.row.sp }}
           </b-table-column>
           <b-table-column field="" label="">
-            <b-checkbox type="is-success" v-model="selectedSkills" :native-value=" props.row.name "></b-checkbox>
+            <b-checkbox type="is-success" v-model="selectedSkills" :native-value="props.row.name" :disabled="props.row.element === 'Divine'"></b-checkbox>
           </b-table-column>
         </template>
       </b-table>
@@ -62,7 +62,7 @@ export default {
       jobDetails: jobDetails,
       className: "",
       characterName: this.$route.params.characterName,
-      selectedSkills: [],
+      selectedSkills: []
     };
   },
   props: {
@@ -88,6 +88,15 @@ export default {
     },
     selectedSkills: {
       handler() {
+        // Handle Divine skills
+        const divineSkill = this.getDivineSkillName();
+
+        if (this.selectedSkills.length === this.filteredJobSkills.length - 1 && !this.divineSkillLearned()) {
+          this.selectedSkills.push(divineSkill);
+        } else if ((this.selectedSkills.length <= this.filteredJobSkills.length - 1) && this.divineSkillLearned()) {
+          this.selectedSkills = this.selectedSkills.filter(skill => skill !== divineSkill);
+        }    
+        
         localStorage.setItem(this.getSkillStorageName(), JSON.stringify(this.selectedSkills));
       }
     },
@@ -102,9 +111,6 @@ export default {
       // Set secondary job on load
       this.className = this.getActiveClassCached();
     }
-  },
-  destroyed: function() {
-    //console.log("destroyed job component!");
   },
   computed: {
     allJobNames: function() {
@@ -145,9 +151,8 @@ export default {
       }
     },
     doSomething : function () {
-      console.log(this.jobDetails.filter(function (detail){
-        return detail.name === "Therion";
-      }, this).length);
+      // console.log(this.filteredJobSkills.length);
+      // console.log(this.selectedSkills.length);
     },
     getSkillStorageName: function() {
       if (this.isPrimary) {
@@ -169,6 +174,14 @@ export default {
     },
     getActiveClassCached() {
       return localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
+    },
+    divineSkillLearned() {
+      return (this.selectedSkills.includes(this.getDivineSkillName()));      
+    },
+    getDivineSkillName() {
+      return (this.filteredJobSkills.filter(function (skill) {
+            return skill.element === "Divine";
+          }, this))[0].name;
     }
   }
 };
