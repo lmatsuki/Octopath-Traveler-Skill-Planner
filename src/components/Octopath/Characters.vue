@@ -17,7 +17,20 @@
                 <router-link to="/octopathskillcalc/alfyn" active-class="is-active">Alfyn</router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/ophilia" active-class="is-active">Ophilia</router-link>
+                <router-link to="/octopathskillcalc/ophilia" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/ophilia_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Ophilia</p>
+                            </div>
+                        </div>
+                    </article>                                
+                </router-link>
             </li>
             <li>
                 <router-link to="/octopathskillcalc/tressa" active-class="is-active">Tressa</router-link>
@@ -31,6 +44,30 @@
         </ul>
     </aside>
 </template>
+
+<style>
+.menu-list li {
+    border: #ffffff8f solid 1px;
+    background-color: #42372ab5;
+}
+
+.menu-list li a {
+    color: white;
+}
+
+.menu-list li a:hover {
+    background-color: #4c3f2f;
+    color: white;
+}
+
+.menu-list li a.is-active {
+    background-color: #271c0a;
+}
+
+.media {
+    align-items: center;
+}
+</style>
 
 <script>
 export default {
