@@ -5,16 +5,68 @@
         </p>
         <ul class="menu-list">
             <li>
-                <router-link to="/octopathskillcalc/therion" active-class="is-active">Therion</router-link>
+                <router-link to="/octopathskillcalc/therion" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/therion_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Therion</p>
+                            </div>
+                        </div>
+                    </article>  
+                </router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/primrose" active-class="is-active">Primrose</router-link>
+                <router-link to="/octopathskillcalc/primrose" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/primrose_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Primrose</p>
+                            </div>
+                        </div>
+                    </article>  
+                </router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/haanit" active-class="is-active">H'aanit</router-link>
+                <router-link to="/octopathskillcalc/haanit" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/haanit_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>H'aanit</p>
+                            </div>
+                        </div>
+                    </article>  
+                </router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/alfyn" active-class="is-active">Alfyn</router-link>
+                <router-link to="/octopathskillcalc/alfyn" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/alfyn_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Alfyn</p>
+                            </div>
+                        </div>
+                    </article>  
+                </router-link>
             </li>
             <li>
                 <router-link to="/octopathskillcalc/ophilia" active-class="is-active">
@@ -33,13 +85,52 @@
                 </router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/tressa" active-class="is-active">Tressa</router-link>
+                <router-link to="/octopathskillcalc/tressa" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/tressa_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Tressa</p>
+                            </div>
+                        </div>
+                    </article> 
+                </router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/cyrus" active-class="is-active">Cyrus</router-link>
+                <router-link to="/octopathskillcalc/cyrus" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/cyrus_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Cyrus</p>
+                            </div>
+                        </div>
+                    </article>    
+                </router-link>
             </li>
             <li>
-                <router-link to="/octopathskillcalc/olberic" active-class="is-active">Olberic</router-link>
+                <router-link to="/octopathskillcalc/olberic" active-class="is-active">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-32x32">
+                                <img src="@/assets/Octopath/olberic_head.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content is-vcentered">
+                                <p>Olberic</p>
+                            </div>
+                        </div>
+                    </article>    
+                </router-link>
             </li>
         </ul>
     </aside>
