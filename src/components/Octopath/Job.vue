@@ -48,6 +48,10 @@
   .visible-tooltip .table-wrapper {
     overflow: visible;
   }
+
+  .has-background-primary, .button.is-primary {
+    background-color: #331a00 !important;
+  }
 </style>
 
 <script>
