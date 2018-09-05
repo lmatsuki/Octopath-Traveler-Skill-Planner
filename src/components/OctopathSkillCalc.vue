@@ -19,6 +19,7 @@
                 <router-view is-primary :selectedSkills="selectedPrimarySkills"></router-view>
               </div>
               <div class="column">
+                <span class="is-invisible">hidden</span>
                 <router-view :selectedSkills="selectedSecondarySkills"></router-view>
               </div>
             </div>
