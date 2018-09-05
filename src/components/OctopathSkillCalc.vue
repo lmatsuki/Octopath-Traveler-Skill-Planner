@@ -35,7 +35,7 @@
 
 <style>
   .bg-image {
-    background-image: url(/img/worldmap.d72f062c.jpg);
+    background-image: url(../assets/Octopath/worldmap.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;

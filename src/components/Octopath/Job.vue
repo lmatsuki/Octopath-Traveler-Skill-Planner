@@ -41,7 +41,6 @@
         </template>
       </b-table>
     </span>
-     <a class="button is-info" v-on:click="doSomething">Press me</a>
   </span>
 </template>
 
@@ -148,10 +147,6 @@ export default {
           return "";
         }
       }
-    },
-    doSomething : function () {
-      // console.log(this.filteredJobSkills.length);
-      // console.log(this.selectedSkills.length);
     },
     getSkillStorageName: function() {
       if (this.isPrimary) {
