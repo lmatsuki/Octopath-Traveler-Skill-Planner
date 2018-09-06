@@ -2,42 +2,10 @@
     {
         "characterName": "Therion",
         "className": "Thief",
-        "name": "Armor Corrosive",
-        "sp": 4,
-        "element": "",
-        "description": "Reduces an enemies physical defense for two turns."
-    },
-    {
-        "characterName": "Therion",
-        "className": "Thief",
-        "name": "HP Thief",
-        "sp": 6,
-        "element": "",
-        "description": "Attacks one enemy twice with a dagger. Attacker gains HP equal to half the damage dealt."
-    },
-    {
-        "characterName": "Therion",
-        "className": "Thief",
-        "name": "Share SP",
-        "sp": 0,
-        "element": "",
-        "description": "Give 50% of your current SP to another party member."
-    },
-    {
-        "characterName": "Therion",
-        "className": "Thief",
         "name": "Steal",
         "sp": 2,
         "element": "",
         "description": "Steal one item from one enemy."
-    },
-    {
-        "characterName": "Therion",
-        "className": "Thief",
-        "name": "Steal SP",
-        "sp": 6,
-        "element": "",
-        "description": "Attack a single enemy twice with a dagger. Attacker gains SP equal to 5% of the damage dealt."
     },
     {
         "characterName": "Therion",
@@ -50,18 +18,50 @@
     {
         "characterName": "Therion",
         "className": "Thief",
-        "name": "Aeber’s Reckoning",
-        "sp": 30,
+        "name": "HP Thief",
+        "sp": 6,
         "element": "",
-        "description": "Attack all enemies with a dagger. Damage dealt is proportional to the user’s speed stat."
+        "description": "Attacks one enemy twice with a dagger. Attacker gains HP equal to half the damage dealt."
     },
     {
-        "characterName": "Primrose",
-        "className": "Dancer",
-        "name": "Bewildering Grace",
-        "sp": 25,
+        "characterName": "Therion",
+        "className": "Thief",
+        "name": "Shackle Foe",
+        "sp": 4,
         "element": "",
-        "description": "Causes a random effect to happen once."
+        "description": "Reduce a single foe's physical attack strength for 2 turns."
+    },
+    {
+        "characterName": "Therion",
+        "className": "Thief",
+        "name": "Armor Corrosive",
+        "sp": 4,
+        "element": "",
+        "description": "Reduces an enemies physical defense for two turns."
+    },
+    {
+        "characterName": "Therion",
+        "className": "Thief",
+        "name": "Steal SP",
+        "sp": 6,
+        "element": "",
+        "description": "Attack a single enemy twice with a dagger. Attacker gains SP equal to 5% of the damage dealt."
+    },
+    {
+        "characterName": "Therion",
+        "className": "Thief",
+        "name": "Share SP",
+        "sp": 0,
+        "element": "",
+        "description": "Give 50% of your current SP to another party member."
+    },
+    {
+        "characterName": "Therion",
+        "className": "Thief",
+        "name": "Aeber’s Reckoning",
+        "sp": 30,
+        "element": "Divine",
+        "description": "Attack all enemies with a dagger. Damage dealt is proportional to the user’s speed stat."
     },
     {
         "characterName": "Primrose",
@@ -74,18 +74,26 @@
     {
         "characterName": "Primrose",
         "className": "Dancer",
-        "name": "Mole Dance",
-        "sp": 4,
-        "element": "",
-        "description": "Boost a party member’s physical defense for two turns."
-    },
-    {
-        "characterName": "Primrose",
-        "className": "Dancer",
         "name": "Moonlight Waltz",
         "sp": 7,
         "element": "Dark",
         "description": "Deals massive dark-elemental damage to one enemy."
+    },
+    {
+        "characterName": "Primrose",
+        "className": "Dancer",
+        "name": "Peacock Strut",
+        "sp": 4,
+        "element": "",
+        "description": "Boost a party member’s elemental attacks for two turns."
+    },
+    {
+        "characterName": "Primrose",
+        "className": "Dancer",
+        "name": "Mole Dance",
+        "sp": 4,
+        "element": "",
+        "description": "Boost a party member’s physical defense for two turns."
     },
     {
         "characterName": "Primrose",
@@ -106,17 +114,17 @@
     {
         "characterName": "Primrose",
         "className": "Dancer",
-        "name": "Peacock Strut",
-        "sp": 4,
+        "name": "Bewildering Grace",
+        "sp": 25,
         "element": "",
-        "description": "Boost a party member’s elemental attacks for two turns."
+        "description": "Causes a random effect to happen once."
     },
     {
         "characterName": "Primrose",
         "className": "Dancer",
         "name": "Sealticge’s Seduction",
         "sp": 30,
-        "element": "",
+        "element": "Divine",
         "description": "Target party member’s skills that usually target one enemy will target all for three turns."
     },
     {        
@@ -140,7 +148,7 @@
         "className": "Hunter",
         "name": "Thunderbird",
         "sp": "7",
-        "element": "",
+        "element": "Lightning",
         "description": "Deal heavy lightning damage to a single foe."
     },
     {
@@ -186,6 +194,14 @@
     {
         "characterName": "Olberic Eisenberg",
         "className": "Warrior",
+        "name": "Level Slash",
+        "sp": "9",
+        "element": "",
+        "description": "Attack all enemies with your sword."
+    },
+    {
+        "characterName": "Olberic Eisenberg",
+        "className": "Warrior",
         "name": "Abide",
         "sp": "4",
         "element": "",
@@ -194,10 +210,10 @@
     {
         "characterName": "Olberic Eisenberg",
         "className": "Warrior",
-        "name": "Cross Strike",
-        "sp": "12",
+        "name": "Spearhead",
+        "sp": "6",
         "element": "",
-        "description": "Attack a single enemy with your sword."
+        "description": "Attack one enemy with a polearm and get to move earlier on the next turn."
     },
     {
         "characterName": "Olberic Eisenberg",
@@ -210,18 +226,10 @@
     {
         "characterName": "Olberic Eisenberg",
         "className": "Warrior",
-        "name": "Level Slash",
-        "sp": "9",
+        "name": "Cross Strike",
+        "sp": "12",
         "element": "",
-        "description": "Attack all enemies with your sword."
-    },
-    {
-        "characterName": "Olberic Eisenberg",
-        "className": "Warrior",
-        "name": "Spearhead",
-        "sp": "6",
-        "element": "",
-        "description": "Attack one enemy with a polearm and get to move earlier on the next turn."
+        "description": "Attack a single enemy with your sword."
     },
     {
         "characterName": "Olberic Eisenberg",
@@ -252,48 +260,24 @@
         "className": "Scholar",
         "name": "Fireball",
         "sp": "8",
-        "element": "",
+        "element": "Fire",
         "description": "Deals fire damage to all enemies."
-    },
-    {
-        "characterName": "Cyrus Albright",
-        "className": "Scholar",
-        "name": "Fire Storm",
-        "sp": "22",
-        "element": "",
-        "description": "Deals fire damage to all enemies twice."
     },
     {
         "characterName": "Cyrus Albright",
         "className": "Scholar",
         "name": "Icewind",
         "sp": "8",
-        "element": "",
+        "element": "Ice",
         "description": "Deals ice damage to all enemies."
-    },
-    {
-        "characterName": "Cyrus Albright",
-        "className": "Scholar",
-        "name": "Blizzard",
-        "sp": "22",
-        "element": "",
-        "description": "Deals ice damage to all enemies twice."
     },
     {
         "characterName": "Cyrus Albright",
         "className": "Scholar",
         "name": "Lightning Bolt",
         "sp": "8",
-        "element": "",
+        "element": "Lightning",
         "description": "Deals lightning damage to all enemies."
-    },
-    {
-        "characterName": "Cyrus Albright",
-        "className": "Scholar",
-        "name": "Lightning Blast",
-        "sp": "22",
-        "element": "",
-        "description": "Does lightning damage to all enemies twice."
     },
     {
         "characterName": "Cyrus Albright",
@@ -302,6 +286,30 @@
         "sp": "1",
         "element": "",
         "description": "Reveals the HP and one weakness of a single enemy."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Fire Storm",
+        "sp": "22",
+        "element": "Fire",
+        "description": "Deals fire damage to all enemies twice."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Blizzard",
+        "sp": "22",
+        "element": "Ice",
+        "description": "Deals ice damage to all enemies twice."
+    },
+    {
+        "characterName": "Cyrus Albright",
+        "className": "Scholar",
+        "name": "Lightning Blast",
+        "sp": "22",
+        "element": "Lightning",
+        "description": "Does lightning damage to all enemies twice."
     },
     {
         "characterName": "Cyrus Albright",
@@ -322,18 +330,10 @@
     {
         "characterName": "Tressa Colozone",
         "className": "Merchant",
-        "name": "Donate BP",
-        "sp": "3",
-        "element": "",
-        "description": "Donates one BP to the targeted ally."
-    },
-    {
-        "characterName": "Tressa Colozone",
-        "className": "Merchant",
-        "name": "Hired Help",
-        "sp": "0",
-        "element": "",
-        "description": "Pay to summon hired help to fight on your side."
+        "name": "Tradewinds",
+        "sp": "7 SP",
+        "element": "Wind",
+        "description": "Deals massive wind-elemental damage to one enemy."
     },
     {
         "characterName": "Tressa Colozone",
@@ -346,6 +346,22 @@
     {
         "characterName": "Tressa Colozone",
         "className": "Merchant",
+        "name": "Trade Tempest",
+        "sp": "10",
+        "element": "Wind",
+        "description": "Deals wind-elemental damage to all enemies."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
+        "name": "Donate BP",
+        "sp": "3",
+        "element": "",
+        "description": "Donates one BP to the targeted ally."
+    },
+    {
+        "characterName": "Tressa Colozone",
+        "className": "Merchant",
         "name": "Sidestep",
         "sp": "10",
         "element": "",
@@ -354,18 +370,10 @@
     {
         "characterName": "Tressa Colozone",
         "className": "Merchant",
-        "name": "Trade Tempest",
-        "sp": "10",
+        "name": "Hired Help",
+        "sp": "0",
         "element": "",
-        "description": "Deals wind-elemental damage to all enemies."
-    },
-    {
-        "characterName": "Tressa Colozone",
-        "className": "Merchant",
-        "name": "Tradewinds",
-        "sp": "7 SP",
-        "element": "",
-        "description": "Deals massive wind-elemental damage to one enemy."
+        "description": "Pay to summon hired help to fight on your side."
     },
     {
         "characterName": "Tressa Colozone",
@@ -374,14 +382,6 @@
         "sp": "30",
         "element": "",
         "description": "Hits an enemy with one non-elemental attack and gives you cash equal to the damage you dealt."
-    },
-    {
-        "characterName": "Ophilia Clement",
-        "className": "Cleric",   
-        "name": "Heal More",
-        "sp": "25",
-        "element": "",
-        "description": "Restores a significant amount of health to the entire party."
     },
     {
         "characterName": "Ophilia Clement",
@@ -396,16 +396,32 @@
         "className": "Cleric",   
         "name": "Holy Light",
         "sp": "6",
-        "element": "",
+        "element": "Holy",
         "description": "Attack one enemy with light-elemental damage."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Sheltering Veil",
+        "sp": "6",
+        "element": "",
+        "description": "Raises a party member’s elemental defense for two turns."
     },
     {
         "characterName": "Ophilia Clement",
         "className": "Cleric",   
         "name": "Luminescence",
         "sp": "9",
-        "element": "",
+        "element": "Holy",
         "description": "Attack all enemies with light-elemental damage."
+    },
+    {
+        "characterName": "Ophilia Clement",
+        "className": "Cleric",   
+        "name": "Heal More",
+        "sp": "25",
+        "element": "",
+        "description": "Restores a significant amount of health to the entire party."
     },
     {
         "characterName": "Ophilia Clement",
@@ -426,18 +442,34 @@
     {
         "characterName": "Ophilia Clement",
         "className": "Cleric",   
-        "name": "Sheltering Veil",
-        "sp": "6",
-        "element": "",
-        "description": "Raises a party member’s elemental defense for two turns."
-    },
-    {
-        "characterName": "Ophilia Clement",
-        "className": "Cleric",   
         "name": "Aelfric’s Auspices",
         "sp": "30",
-        "element": "",
+        "element": "Divine",
         "description": "Allow a single party member to trigger twice per turn for three turns."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "First Aid",
+        "sp": "4",
+        "element": "",
+        "description": "Restore health for a single party member."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Icicle",
+        "sp": "7",
+        "element": "Ice",
+        "description": "Deals ice damage to one enemy."
+    },
+    {
+        "characterName": "Alfyn Greengrass",
+        "className": "Apothecary",
+        "name": "Rehabilitate",
+        "sp": "10",
+        "element": "",
+        "description": "Cure a single ally of all status ailments and render them immune to further ailments for 2 turns."
     },
     {
         "characterName": "Alfyn Greengrass",
@@ -458,18 +490,10 @@
     {
         "characterName": "Alfyn Greengrass",
         "className": "Apothecary",
-        "name": "First Aid",
-        "sp": "4",
+        "name": "Vivify",
+        "sp": "16",
         "element": "",
-        "description": "Restore health for a single party member."
-    },
-    {
-        "characterName": "Alfyn Greengrass",
-        "className": "Apothecary",
-        "name": "Icicle",
-        "sp": "7",
-        "element": "",
-        "description": "Deals ice damage to one enemy."
+        "description": "Revive a single party member."
     },
     {
         "characterName": "Alfyn Greengrass",
@@ -482,17 +506,9 @@
     {
         "characterName": "Alfyn Greengrass",
         "className": "Apothecary",
-        "name": "Vivify",
-        "sp": "16",
-        "element": "",
-        "description": "Revive a single party member."
-    },
-    {
-        "characterName": "Alfyn Greengrass",
-        "className": "Apothecary",
         "name": "Dohter’s Charity",
         "sp": "30 SP",
-        "element": "",
+        "element": "Divine",
         "description": "Items used by the target will affect the entire party for three turns."
     }
 ]
