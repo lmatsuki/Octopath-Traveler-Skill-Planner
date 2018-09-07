@@ -28,7 +28,7 @@
             </b-tooltip>
           </b-table-column>
           <b-table-column field="element" label=" ">
-            <figure class="image is-16x16" v-if="props.row.element!=''&&props.row.element!='Divine'">
+            <figure class="image icon-element" v-if="props.row.element!=''&&props.row.element!='Divine'">
               <img :src="getImagepath(props.row.element)">
             </figure>
           </b-table-column>
@@ -51,6 +51,15 @@
 
   .has-background-primary, .button.is-primary {
     background-color: #331a00 !important;
+  }
+
+  .icon-element img {
+    
+    background-color: #000000;
+    border: solid 2px #00000036;
+    border-radius: 3px;
+    width: 25px;
+    height: 25px;
   }
 </style>
 
