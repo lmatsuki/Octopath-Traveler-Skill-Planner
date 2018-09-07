@@ -28,9 +28,9 @@
             </b-tooltip>
           </b-table-column>
           <b-table-column field="element" label=" ">
-            <b-icon v-show="props.row.element != ''" pack="fas" icon="user" size="is-small">
-              {{ props.row.element }}
-            </b-icon>
+            <figure class="image is-16x16" v-if="props.row.element!=''&&props.row.element!='Divine'">
+              <img :src="getImagepath(props.row.element)">
+            </figure>
           </b-table-column>
           <b-table-column field="sp" label="SP">
             {{ props.row.sp }}
@@ -185,6 +185,10 @@ export default {
       if (localStorage.getItem(this.getSkillStorageName())) {
         this.selectedSkills = JSON.parse(localStorage.getItem(this.getSkillStorageName()));
       }
+    },
+    getImagepath: function (imageName) {
+      var images = require.context("@/assets/Octopath/", false, /\.png$/);
+      return images("./" + imageName.toLowerCase() + "_element.png");
     }
   }
 };
