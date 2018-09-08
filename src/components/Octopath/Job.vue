@@ -61,6 +61,16 @@
     width: 25px;
     height: 25px;
   }
+
+  .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-success {
+    background: transparent no-repeat center center;
+    background-image: url(../../assets/Octopath/checked.png);
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+    transition: none;
+    border: 0;
+  }
 </style>
 
 <script>
