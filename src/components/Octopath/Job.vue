@@ -19,7 +19,7 @@
         </div>
       </b-dropdown-item>
     </b-dropdown>
-    <span class="tile is-child notification">
+    <span class="tile is-child notification bg-opaque">
       <b-table :data="filteredJobSkills" :hoverable="true" class="table is-fullwidth visible-tooltip">
         <template slot-scope="props">
           <b-table-column field="name" label="Skill">
@@ -53,23 +53,55 @@
     background-color: #331a00 !important;
   }
 
-  .icon-element img {
-    
-    background-color: #000000;
-    border: solid 2px #00000036;
+  .icon-element img {    
+    background-color: transparent;
     border-radius: 3px;
     width: 25px;
     height: 25px;
+  }
+
+  .check {
+    width: 25px !important;
+    height: 25px !important;
+    border: 0 !important;
   }
 
   .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-success {
     background: transparent no-repeat center center;
     background-image: url(../../assets/Octopath/checked.png);
     background-size: cover;
-    width: 2em;
-    height: 2em;
+    width: 25px;
+    height: 25px;
     transition: none;
+  }
+
+  .b-checkbox.checkbox[disabled] {
+    opacity: 1;
+  }
+
+  .table {
+    vertical-align: middle;
+  }
+
+  .table td {
     border: 0;
+  }
+
+  .bg-opaque {
+    background-color: #000000a3;    
+  }
+
+  .bg-opaque .table {
+    background-color: transparent;
+    color: #d2d2d2;
+  }
+
+  .bg-opaque .table th {
+    color: #d2d2d2;
+  }
+
+  .bg-opaque .table tr:hover {
+    background-color: #96969629 !important;
   }
 </style>
 
