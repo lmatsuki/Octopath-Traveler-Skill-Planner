@@ -25,9 +25,9 @@
                 <router-view :selectedSkills="selectedSecondarySkills"></router-view>
               </div>
             </div>
-            <div class="tile is-parent">
+            <!-- <div class="tile is-parent">
               <support-skills />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -58,6 +58,8 @@
 
   .title, .subtitle {
     color: white;
+        text-shadow: 2px 2px 5px black;
+    font-family: 'Mirza', cursive;    
   }
 
   #app, html, body {

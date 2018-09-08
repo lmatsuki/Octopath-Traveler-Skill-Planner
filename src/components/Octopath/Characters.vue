@@ -1,6 +1,6 @@
 <template>
     <aside class="menu">
-        <p class="menu-label">
+        <p class="menu-label is-invisible">
             Characters
         </p>
         <ul class="menu-list">

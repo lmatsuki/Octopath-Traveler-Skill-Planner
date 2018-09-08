@@ -35,7 +35,7 @@
           <b-table-column field="sp" label="SP">
             {{ props.row.sp }}
           </b-table-column>
-          <b-table-column field="" label="">
+          <b-table-column field="">
             <b-checkbox type="is-success" v-model="selectedSkills" :native-value="props.row.name" :disabled="props.row.element === 'Divine'"></b-checkbox>
           </b-table-column>
         </template>
@@ -105,6 +105,7 @@
     background-color: transparent;   
     padding-left: 0; 
     padding-right: 0; 
+    padding-bottom: 0;
   }
 
   .bg-opaque .table {
@@ -133,6 +134,10 @@
     padding-right: 0;
   }
 
+  .tile.is-vertical > .tile.is-child:not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+
   .dropdown .dropdown-trigger .button {
     justify-content: left;
     font-family: 'Neucha', cursive;
@@ -144,6 +149,12 @@
 
   .dropdown.is-disabled {
     opacity: 1;
+  }
+
+  .tooltip::after {
+    border-radius: 0;
+    border-bottom: solid 1px #a1a1a1;
+    background: linear-gradient( to right, black, black, #00000030) !important;
   }
 </style>
 
