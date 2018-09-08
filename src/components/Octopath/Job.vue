@@ -4,7 +4,7 @@
       <button class="button is-primary is-fullwidth" type="button" slot="trigger">
         <template>
           <span v-for="detail in jobDetails" :key="detail.name" v-if="detail.className === className">
-            <span>{{ detail.className }}</span>
+            <span>{{ detail.className }} <i class="fa fa-caret-down" v-if="!isPrimary"></i></span>
           </span>
         </template>
         <b-icon icon="menu-down"></b-icon>
