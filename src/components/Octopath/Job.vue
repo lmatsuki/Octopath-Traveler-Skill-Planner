@@ -91,6 +91,11 @@
     border: 0;
   }
 
+  .table td {
+    padding-bottom: 2px;
+    padding-top: 5px;
+  }
+
   .table th {
     font-weight: normal !important;
     font-size: 15px;
@@ -105,6 +110,9 @@
   .bg-opaque .table {
     background-color: transparent;
     color: #d2d2d2;
+    font-family: 'Neucha', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
   }
 
   .bg-opaque .table th {
@@ -118,6 +126,24 @@
   .bg-opaque span.is-parent {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .bg-opaque-2 span.is-parent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .dropdown .dropdown-trigger .button {
+    justify-content: left;
+    font-family: 'Neucha', cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background-color: transparent !important;
+    padding-left: 0.75rem;
+  }
+
+  .dropdown.is-disabled {
+    opacity: 1;
   }
 </style>
 

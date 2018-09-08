@@ -144,6 +144,9 @@
 
 .menu-list li a {
     color: white;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 .menu-list li a:hover {

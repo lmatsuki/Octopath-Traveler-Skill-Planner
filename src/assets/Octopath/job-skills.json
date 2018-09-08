@@ -331,7 +331,7 @@
         "characterName": "Tressa Colozone",
         "className": "Merchant",
         "name": "Tradewinds",
-        "sp": "7 SP",
+        "sp": "7",
         "element": "Wind",
         "description": "Deals massive wind-elemental damage to one enemy."
     },
@@ -507,7 +507,7 @@
         "characterName": "Alfyn Greengrass",
         "className": "Apothecary",
         "name": "Dohter’s Charity",
-        "sp": "30 SP",
+        "sp": "30",
         "element": "Divine",
         "description": "Items used by the target will affect the entire party for three turns."
     }

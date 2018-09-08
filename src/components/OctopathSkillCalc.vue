@@ -20,8 +20,8 @@
                 </div>                
                 <router-view is-primary :selectedSkills="selectedPrimarySkills"></router-view>
               </div>
-              <div class="column">
-                <span class="label-charName tile is-parent is-invisible">hidden</span>
+              <div class="column bg-opaque-2">
+                <div class="label-charName tile is-parent is-invisible">hidden</div>
                 <router-view :selectedSkills="selectedSecondarySkills"></router-view>
               </div>
             </div>
@@ -37,6 +37,8 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Mirza|Neucha');
+
   .bg-image {
     background-image: url(../assets/Octopath/worldmap.jpg);
     background-repeat: no-repeat;
@@ -63,18 +65,22 @@
   }
 
   .label-charName {
-    padding-left: 1.5rem !important;
-    font-weight: bold;
-    font-size: 20px;
+    padding-left: 0.75rem !important;
+    font-weight: normal;
+    font-size: 30px;
     color: white;
-    
+    border-bottom: #d3d3d39c 1px solid;
+    text-shadow: 2px 2px 7px black;
+    font-family: 'Mirza', cursive;    
+    line-height: 30px;
   }
 
-  .bg-opaque:first-child {
+  .bg-opaque:first-child, .bg-opaque-2 {
     background-color: #000000a3;    
     border: 1px solid #d3d3d39c;
     padding-left: 0;
     padding-right: 0;
+    margin-right: 1rem;
     margin-top: 1.8rem;
   }
 </style>
