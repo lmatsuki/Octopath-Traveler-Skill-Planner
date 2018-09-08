@@ -22,7 +22,7 @@
     <span class="tile is-child notification bg-opaque">
       <b-table :data="filteredJobSkills" :hoverable="true" class="table is-fullwidth visible-tooltip">
         <template slot-scope="props">
-          <b-table-column field="name" label="Skill">
+          <b-table-column field="name" label="Skills">
             <b-tooltip type="is-dark is-fixed" :label="props.row.description">
               {{ props.row.name }}
             </b-tooltip>
@@ -83,12 +83,23 @@
     vertical-align: middle;
   }
 
-  .table td {
+  .table thead {
+    background-color: black;
+  }
+
+  .table th, .table td {    
     border: 0;
   }
 
-  .bg-opaque {
-    background-color: #000000a3;    
+  .table th {
+    font-weight: normal !important;
+    font-size: 15px;
+  }
+
+  .notification {
+    background-color: transparent;   
+    padding-left: 0; 
+    padding-right: 0; 
   }
 
   .bg-opaque .table {
@@ -102,6 +113,11 @@
 
   .bg-opaque .table tr:hover {
     background-color: #96969629 !important;
+  }
+
+  .bg-opaque span.is-parent {
+    padding-left: 0;
+    padding-right: 0;
   }
 </style>
 

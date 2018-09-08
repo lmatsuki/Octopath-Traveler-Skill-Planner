@@ -14,12 +14,14 @@
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile">
-              <div class="column is-half">
-                {{ characterName | capitalize }}
+              <div class="column is-half bg-opaque">
+                <div class="label-charName tile is-parent">
+                  {{ characterName | capitalize }}
+                </div>                
                 <router-view is-primary :selectedSkills="selectedPrimarySkills"></router-view>
               </div>
               <div class="column">
-                <span class="is-invisible">hidden</span>
+                <span class="label-charName tile is-parent is-invisible">hidden</span>
                 <router-view :selectedSkills="selectedSecondarySkills"></router-view>
               </div>
             </div>
@@ -58,6 +60,22 @@
 
   #app, html, body {
     height: 100%;
+  }
+
+  .label-charName {
+    padding-left: 1.5rem !important;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+  }
+
+  .bg-opaque:first-child {
+    background-color: #000000a3;    
+    border: 1px solid #d3d3d39c;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1.8rem;
   }
 </style>
 
