@@ -186,7 +186,7 @@ export default {
       if (this.isPrimary === false && localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)) {
         // Set secondary job on load
         this.className = localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
-      }
+      }    
 
       this.updateSelectedSkills();
     },

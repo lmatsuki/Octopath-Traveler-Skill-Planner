@@ -112,6 +112,12 @@ export default {
     Job,
     SupportSkills
   },
+  watch: {
+    $route(to) {
+      // Update character name
+      this.characterName = this.$options.filters.capitalize(to.params.characterName);
+    }
+  },
   filters: {
     capitalize: function(value) {
       return value.charAt(0).toUpperCase() + value.slice(1);
