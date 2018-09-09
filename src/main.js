@@ -12,9 +12,10 @@ Vue.config.productionTip = false
 
 // Define routes.
 const routes = [
-  { path: '/', name: 'Home', component: Home },
+  { path: '/', name: 'Home', component: Home, meta: { title: 'Leon\'s Tools' } },
   {
     path: '/octopathskillcalc', name: 'OctopathSkillCalc', component: OctopathSkillCalc,
+    meta: { title: 'Leon\'s Tools' },
     children: [
       { path: ':characterName', component: Job }
     ]
@@ -23,7 +24,8 @@ const routes = [
 
 // Create the router instance.
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 new Vue({
