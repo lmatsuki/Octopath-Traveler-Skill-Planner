@@ -43,8 +43,8 @@ import Characters from "@/components/Octopath/Characters";
 import Job from "@/components/Octopath/Job";
 import SupportSkills from "@/components/Octopath/SupportSkills";
 
-import "../assets/Octopath/css/site.css";
 import "buefy/lib/buefy.css";
+import "../assets/Octopath/css/site.css";
 Vue.use(Buefy);
 
 export default {
