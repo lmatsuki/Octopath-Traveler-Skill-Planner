@@ -19,4 +19,4 @@ COPY . .
 RUN npm run build
 
 EXPOSE 80
-CMD [ "npm", "serve", "--single", "--port", "80", "dist" ]
+CMD [ "npm", "run", "serve", "--single", "--port", "80", "dist" ]
