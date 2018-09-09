@@ -1,10 +1,10 @@
 <template>
   <span class="tile is-parent is-vertical">
-    <b-dropdown class="tile is-child" v-model="className" :disabled="isPrimary">
+    <b-dropdown class="tile is-child" v-model="className" :disabled="isPrimary" >
       <button class="button is-primary is-fullwidth" type="button" slot="trigger">
         <template>
           <span v-for="detail in jobDetails" :key="detail.name" v-if="detail.className === className">
-            <span>{{ detail.className }} <i class="fa fa-caret-down" v-if="!isPrimary"></i></span>
+            <span>{{ detail.className }} <i class="fa fa-caret-down fa-xs" v-if="!isPrimary"></i></span>
           </span>
         </template>
         <b-icon icon="menu-down"></b-icon>
@@ -68,7 +68,7 @@
 
   .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-success {
     background: transparent no-repeat center center;
-    background-image: url(../../assets/Octopath/checked.png);
+    background-image: url(../../assets/Octopath/img/checked.png);
     background-size: cover;
     width: 25px;
     height: 25px;
@@ -167,8 +167,8 @@
 </style>
 
 <script>
-import jobDetails from "@/assets/Octopath/job-details.json";
-import jobSkills from "@/assets/Octopath/job-skills.json";
+import jobDetails from "@/assets/Octopath/json/job-details.json";
+import jobSkills from "@/assets/Octopath/json/job-skills.json";
 
 export default {
   data() {
@@ -189,14 +189,7 @@ export default {
       this.className = this.convertCharNameToClassName(this.characterName);
 
       console.log("Routing was updated.");
-
-      // Update selected class
-      if (this.isPrimary === false && localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)) {
-        // Set secondary job on load
-        this.className = localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
-      }    
-
-      this.updateSelectedSkills();
+      this.loadCharacterSettings();      
     },
     selectedSkills: {
       handler() {
@@ -219,10 +212,14 @@ export default {
     if (this.isPrimary === true) {
       // Set the primary job on load
       this.className = this.convertCharNameToClassName(this.$route.params.characterName);
-    } else if (this.getActiveClassCached()) {
+    } else {
       // Set secondary job on load
-      this.className = this.getActiveClassCached();
-    }
+      if (this.getActiveClassCached()) {
+        this.className = this.getActiveClassCached();
+      } else {
+        this.className = "None";
+      }
+    }    
 
     this.updateSelectedSkills();
   },
@@ -300,8 +297,21 @@ export default {
       }
     },
     getImagepath: function (imageName) {
-      var images = require.context("@/assets/Octopath/", false, /\.png$/);
+      var images = require.context("@/assets/Octopath/img/", false, /\.png$/);
       return images("./" + imageName.toLowerCase() + "_element.png");
+    },
+    loadCharacterSettings: function () {
+      // Update selected class
+      if (this.isPrimary === false) {
+        if (localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`)) {
+          // Set secondary job on load
+          this.className = localStorage.getItem(`${this.characterName.toLowerCase()}-activeClass`);
+        } else {
+          this.className = "None";
+        }
+      }
+
+      this.updateSelectedSkills();
     }
   }
 };

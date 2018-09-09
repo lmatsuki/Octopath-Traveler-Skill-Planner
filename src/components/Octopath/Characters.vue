@@ -9,7 +9,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/therion_head.png">
+                                <img src="@/assets/Octopath/img/therion_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -25,7 +25,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/primrose_head.png">
+                                <img src="@/assets/Octopath/img/primrose_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -41,7 +41,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/haanit_head.png">
+                                <img src="@/assets/Octopath/img/haanit_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -57,7 +57,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/alfyn_head.png">
+                                <img src="@/assets/Octopath/img/alfyn_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -73,7 +73,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/ophilia_head.png">
+                                <img src="@/assets/Octopath/img/ophilia_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -89,7 +89,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/tressa_head.png">
+                                <img src="@/assets/Octopath/img/tressa_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -105,7 +105,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/cyrus_head.png">
+                                <img src="@/assets/Octopath/img/cyrus_head.png">
                             </p>
                         </figure>
                         <div class="media-content">
@@ -121,7 +121,7 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-32x32">
-                                <img src="@/assets/Octopath/olberic_head.png">
+                                <img src="@/assets/Octopath/img/olberic_head.png">
                             </p>
                         </figure>
                         <div class="media-content">

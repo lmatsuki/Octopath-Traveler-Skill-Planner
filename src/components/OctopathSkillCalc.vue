@@ -40,7 +40,7 @@
 @import url('https://fonts.googleapis.com/css?family=Mirza|Neucha');
 
   .bg-image {
-    background-image: url(../assets/Octopath/worldmap.jpg);
+    background-image: url(../assets/Octopath/img/worldmap.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
