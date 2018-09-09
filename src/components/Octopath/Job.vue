@@ -167,8 +167,8 @@
 </style>
 
 <script>
-import jobDetails from "@/assets/Octopath/json/job-details.json";
-import jobSkills from "@/assets/Octopath/json/job-skills.json";
+import jobDetails from "../../../static/json/job-details.json";
+import jobSkills from "../../../static/json/job-skills.json";
 
 export default {
   data() {

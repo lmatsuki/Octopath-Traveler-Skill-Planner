@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero hero-octopath">
     <div class="hero-body">
       <div class="container">
         <div class="title-container">
@@ -56,10 +56,9 @@
     padding: 10px;
   }
 
-  .title, .subtitle {
+  .hero-octopath .title, .subtitle {
     color: white;
-        text-shadow: 2px 2px 5px black;
-    font-family: 'Mirza', cursive;    
+    text-shadow: 2px 2px 5px black;
   }
 
   #app, html, body {
