@@ -1,7 +1,7 @@
 FROM node:9.11.1-alpine
 
 # install simple http server for serving static content
-RUN npm install -g http-server
+RUN apk add --update nodejs nodejs-npm
 
 # make the 'app' folder the current working directory
 WORKDIR /app
@@ -19,4 +19,4 @@ COPY . .
 RUN npm run build
 
 EXPOSE 80
-CMD [ "serve", "--single", "--port", "80", "dist" ]
+CMD [ "npm", "serve", "--single", "--port", "80", "dist" ]
