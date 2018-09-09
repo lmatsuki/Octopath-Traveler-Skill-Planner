@@ -17,7 +17,7 @@ router.get('/*', (req, res, next) => {
 
 app.use('/', router)
 
-app.listen(port)
+var server = app.listen(port)
 
 console.log('App running on port', port)
 
