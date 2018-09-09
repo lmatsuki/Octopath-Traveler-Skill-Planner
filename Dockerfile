@@ -4,7 +4,7 @@ FROM node:9.11.1-alpine
 RUN npm install -g http-server
 
 # make the 'app' folder the current working directory
-WORKDIR /app
+WORKDIR /vue-project
 
 # copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
