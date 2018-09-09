@@ -188,7 +188,7 @@ export default {
       this.characterName = to.params.characterName;
       this.className = this.convertCharNameToClassName(this.characterName);
 
-      console.log("Routing was updated.");
+      // console.log("Routing was updated.");
       this.loadCharacterSettings();      
     },
     selectedSkills: {
@@ -207,7 +207,7 @@ export default {
     },
   },
   mounted: function() {
-    console.log("mounted job component!");
+    // console.log("mounted job component!");
 
     if (this.isPrimary === true) {
       // Set the primary job on load
