@@ -4,7 +4,7 @@ FROM node:9.11.1-alpine
 RUN npm install -g http-server
 
 # make the 'app' folder the current working directory
-WORKDIR /
+WORKDIR /app
 
 # copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
@@ -19,4 +19,4 @@ COPY . .
 RUN npm run build
 
 EXPOSE 80
-CMD [ "http-server", "dist" ]
+CMD [ "npm", "start" ]
