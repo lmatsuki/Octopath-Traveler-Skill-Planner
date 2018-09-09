@@ -1,5 +1,11 @@
 [
     {
+        "name": "None",
+        "className": "None",
+        "pathAction": "",
+        "talent": ""
+    },
+    {
         "name": "Therion",
         "className": "Thief",
         "pathAction": "Steal - allows Therion to steal the belongings of townspeople.",
