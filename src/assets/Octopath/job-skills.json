@@ -380,7 +380,7 @@
         "className": "Merchant",
         "name": "Bifelgan’s Bounty",
         "sp": "30",
-        "element": "",
+        "element": "Divine",
         "description": "Hits an enemy with one non-elemental attack and gives you cash equal to the damage you dealt."
     },
     {

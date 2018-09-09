@@ -160,6 +160,10 @@
   a.dropdown-item.is-active, .dropdown .dropdown-menu .has-link a.is-active {
     background-color: #271c0a;
   }
+
+  .button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active) {
+    box-shadow: none;
+  }
 </style>
 
 <script>
@@ -285,9 +289,10 @@ export default {
       return (this.selectedSkills.includes(this.getDivineSkillName()));      
     },
     getDivineSkillName() {
-      return (this.filteredJobSkills.filter(function (skill) {
+      const divineSkills = (this.filteredJobSkills.filter(function (skill) {
             return skill.element === "Divine";
-          }, this))[0].name;
+          }, this));
+      return divineSkills.length > 0 ? divineSkills[0].name : '';
     },
     updateSelectedSkills() {
       if (localStorage.getItem(this.getSkillStorageName())) {
