@@ -20,7 +20,7 @@
       </b-dropdown-item>
     </b-dropdown>
     <span class="tile is-child notification bg-opaque">
-      <b-table :data="filteredJobSkills" :hoverable="true" class="table is-fullwidth visible-tooltip">
+      <b-table :data="filteredJobSkills" :hoverable="true" class="table is-fullwidth visible-tooltip" v-if="isPrimary || className !=='None'">
         <template slot-scope="props">
           <b-table-column field="name" label="Skills">
             <b-tooltip type="is-dark is-fixed" :label="props.row.description">
