@@ -1,7 +1,7 @@
 //Server.js, don't forget to add express & ejs to packages
 const express = require('express')
 
-const app = express()
+const app = express(), http_instance
 const port = process.env.PORT || 80
 const router = express.Router()
 
@@ -16,6 +16,21 @@ router.get('/*', (req, res, next) => {
 })
 
 app.use('/', router)
+
+app.get('/', function( req, res ){
+  
+    setTimeout( function(){ 
+      res.send( 'all done!' ); 
+    }, 10000 );
+  });
+
+// when shutdown signal is received, do graceful shutdown
+process.on( 'SIGINT', function(){
+    http_instance.close( function(){
+      console.log( 'gracefully shutting down :)' );
+      process.exit();
+    });
+  });
 
 var server = app.listen(port)
 
