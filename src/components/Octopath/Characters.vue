@@ -136,33 +136,6 @@
     </aside>
 </template>
 
-<style>
-.menu-list li {
-    border: #ffffff8f solid 1px;
-    background-color: #42372ab5;
-}
-
-.menu-list li a {
-    color: white;
-    font-family: 'Neucha', cursive;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-.menu-list li a:hover {
-    background-color: #4c3f2f;
-    color: white;
-}
-
-.menu-list li a.is-active {
-    background-color: #271c0a;
-}
-
-.media {
-    align-items: center;
-}
-</style>
-
 <script>
 export default {
   name: "Characters",
