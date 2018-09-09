@@ -45,6 +45,7 @@ import SupportSkills from "@/components/Octopath/SupportSkills";
 
 import "buefy/lib/buefy.css";
 import "../assets/Octopath/css/site.css";
+
 Vue.use(Buefy);
 
 export default {
