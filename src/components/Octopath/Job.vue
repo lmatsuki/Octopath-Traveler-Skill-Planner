@@ -156,6 +156,10 @@
     border-bottom: solid 1px #a1a1a1;
     background: linear-gradient( to right, black, black, #00000030) !important;
   }
+
+  a.dropdown-item.is-active, .dropdown .dropdown-menu .has-link a.is-active {
+    background-color: #271c0a;
+  }
 </style>
 
 <script>

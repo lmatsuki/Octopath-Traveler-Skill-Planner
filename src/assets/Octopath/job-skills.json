@@ -510,5 +510,261 @@
         "sp": "30",
         "element": "Divine",
         "description": "Items used by the target will affect the entire party for three turns."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "BP Boost",
+        "sp": "25",
+        "element": "",
+        "description": "Allow a single ally to gain 2 BP per turn for 2 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Divination",
+        "sp": "25",
+        "element": "",
+        "description": "Increase a single ally's critical rate for 2 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Starsong",
+        "sp": "25",
+        "element": "",
+        "description": "Augment a single ally's physical defense, elemental defense, speed, and evasion for 2 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Celestial Intervention",
+        "sp": "25",
+        "element": "",
+        "description": "For 2 turns, render a single foe unable to receive attribute augmentations, or a single ally immune to attribute penalties."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Ethereal Healing",
+        "sp": "30",
+        "element": "",
+        "description": "Grant HP regeneration to all allies for 2 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Moon's Refllection",
+        "sp": "30",
+        "element": "",
+        "description": "Grant a single ally the ability to counter physical damage one time."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Steorra's Prophecy",
+        "sp": "50",
+        "element": "Divine",
+        "description": "Unleash an elemental attack on all foes that deals damage proportional to the party's current BP."
+    },
+    {
+        "characterName": "",
+        "className": "Starseer",
+        "name": "Shooting Stars",
+        "sp": "35",
+        "element": "",
+        "description": "Deal wind, light, and dark damage to all foes."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Fire Rune",
+        "sp": "15",
+        "element": "Fire",
+        "description": "Weapons the user attacks with will deal additional fire-based damage for 3 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Ice Rune",
+        "sp": "15",
+        "element": "Ice",
+        "description": "Weapons the user attacks with will deal additional ice-based damage for 3 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Thunder Rune",
+        "sp": "15",
+        "element": "Lightning",
+        "description": "Weapons the user attacks with will deal additional lightning-based damage for 3 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Wind Rune",
+        "sp": "15",
+        "element": "Wind",
+        "description": "Weapons the user attacks with will deal additional wind-based damage for 3 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Dark Rune",
+        "sp": "15",
+        "element": "Dark",
+        "description": "Weapons the user attacks with will deal additional dark-based damage for 3 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Light Rune",
+        "sp": "15",
+        "element": "Holy",
+        "description": "Weapons the user attacks with will deal additional light-based damage for 3 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Transfer Rune",
+        "sp": "25",
+        "element": "",
+        "description": "For 3 turns, skills that normally target yourself alone will target your allies as well."
+    },
+    {
+        "characterName": "",
+        "className": "Runelord",
+        "name": "Balogar's Blade",
+        "sp": "50",
+        "element": "Divine",
+        "description": "Deal damage from each of the six elements to a single foe."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Ignis Ardere",
+        "sp": "36",
+        "element": "Fire",
+        "description": "Deal fire damage to all foes 3 times."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Glacies Claudere",
+        "sp": "36",
+        "element": "Ice",
+        "description": "Deal ice damage to all foes 3 times. "
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Tonitrus Canere",
+        "sp": "36",
+        "element": "Lightning",
+        "description": "Deal lightning damage to all foes 3 times."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Venus Saltare",
+        "sp": "36",
+        "element": "Wind",
+        "description": "Deal wind damage to all foes 3 times."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Lux Congerere",
+        "sp": "36",
+        "element": "Holy",
+        "description": "Deal light damage to all foes 3 times."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Tenebrae Operir",
+        "sp": "36",
+        "element": "Dark",
+        "description": "Deal dark damage to all foes 3 times."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Elemental Break",
+        "sp": "20",
+        "element": "",
+        "description": "Unleash a powerful staff attack on a single foe that also reduces the target's elemental defense for 2 turns."
+    },
+    {
+        "characterName": "",
+        "className": "Sorcerer",
+        "name": "Dreisang's Spell",
+        "sp": "50",
+        "element": "Divine",
+        "description": "For 3 turns, elemental attacks performed by a single chosen ally will hit for critical damage."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Tiger Rage",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash an axe attack on all foes."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Qilin's Horn",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash a polearm attack on a single foe."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Yatagarasu",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash a dagger attack on all foes."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Fox Spirit",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash a staff attack on all foes."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Phoenix Storm",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash a bow attack on a single foe."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Nightmare Chimera",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash an attack on a single foe using a weapon o fyour choice. The weapon will be destroyed."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Guardian Liondog",
+        "sp": "35",
+        "element": "",
+        "description": "Unleash 5 to 10 sword attacks on random foes."
+    },
+    {
+        "characterName": "",
+        "className": "Warmaster",
+        "name": "Winnehild's Battle Cry",
+        "sp": "50",
+        "element": "Divine",
+        "description": "Wield six weapons to unleash six attacks on all foes."
     }
 ]

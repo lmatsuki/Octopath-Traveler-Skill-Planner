@@ -46,5 +46,29 @@
         "className": "Apothecary",
         "pathAction": "Inquire - allows Alfyn to learn all sorts of information from people.",
         "talent": "Concoct - allows Alfyn to create potions and substances from various ingredients to aid allies or harm foes in battle."
+    },
+    {
+        "name": "Starseer",
+        "className": "Starseer",
+        "pathAction": "",
+        "talent": ""
+    },
+    {
+        "name": "Sorcerer",
+        "className": "Sorcerer",
+        "pathAction": "",
+        "talent": ""
+    },
+    {
+        "name": "Runelord",
+        "className": "Runelord",
+        "pathAction": "",
+        "talent": ""
+    },
+    {
+        "name": "Warmaster",
+        "className": "Warmaster",
+        "pathAction": "",
+        "talent": ""
     }
 ]
