@@ -1,4 +1,4 @@
-# Octopath Traveler Skill Calculator
+# Octopath Traveler Skill Planner
 
 Complete.
 
