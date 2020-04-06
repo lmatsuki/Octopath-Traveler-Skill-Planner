@@ -2,4 +2,4 @@
 
 Complete.
 
-Note: Currently there are no support skills and more than one character may select the same job.
+Note: Support skills are not supported and more than one character may select the same job.
